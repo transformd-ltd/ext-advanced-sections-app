@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react";
-import Formatic, {Data} from "@transformd-ltd/sdk";
+import Formatic, { Data, Events } from "@transformd-ltd/sdk";
 import axios from "axios";
 import get from "lodash/get";
 import API from "../API";
@@ -34,6 +34,86 @@ function FullscreenForm(props) {
   };
   console.log({ formaticProps });
 
+  useEffect(() => {
+
+    const createDownloadSection = async () => {
+      var downloadSection = document.createElement('div');
+      downloadSection.className = "upload-header";
+      var sectionHeader = document.createElement('h1');
+      var headerContent = document.createTextNode('Uploads');
+      sectionHeader.appendChild(headerContent);
+      downloadSection.append(sectionHeader);
+      API.submissions.retrieve(formaticProps.submissionId)
+      .then((res) => {
+        for (const field in res.data.values) {
+          if (res.data.values[field].type === "fileUpload") {
+            if (res.data.values[field].files) {
+              for (let fileCounter = 0; fileCounter < res.data.values[field].files.length; fileCounter++) {
+                var downloadButton = document.createElement("button");
+                downloadButton.className = "download-buttons";
+                var buttonLabel = document.createTextNode(res.data.values[field].files[fileCounter].filename);
+                downloadButton.appendChild(buttonLabel);
+                downloadButton.addEventListener('click', async () => {downloadOnClick(res.data.values[field].files[fileCounter].id, res.data.values[field].files[fileCounter].filename)});
+                downloadSection.append(downloadButton);
+              }
+            }
+          } else if (res.data.values[field].type === "repeatable") {
+            for (let repeatableCounter = 0; repeatableCounter < res.data.values[field].value.length; repeatableCounter++) {
+              for (const fieldName in res.data.values[field].value[repeatableCounter].values) {
+                if (res.data.values[field].value[repeatableCounter].values[fieldName].type === "fileUpload") {
+                  if (res.data.values[field].value[repeatableCounter].values[fieldName].value) {
+                    for (let fileCounter = 0; fileCounter < res.data.values[field].value[repeatableCounter].values[fieldName].value.length; fileCounter++) {
+                      var downloadButton = document.createElement("button");
+                      downloadButton.className = "download-buttons";
+                      var buttonLabel = document.createTextNode(res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename);
+                      downloadButton.appendChild(buttonLabel);
+                      downloadButton.addEventListener('click', async () => {downloadOnClick(res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].id, res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename)});
+                      downloadSection.append(downloadButton);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      })
+      .then(() => {
+        let aboveField = document.getElementsByName(env.UPLOAD_ABOVE);
+        aboveField[0].parentElement.prepend(downloadSection);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+    };
+
+    const downloadOnClick = async (uploadId, filename) => {
+      API.downloadFile.retrieve(formaticProps.submissionId, uploadId)
+        .then((res) => {
+          let tempLink = document.createElement('a');
+          tempLink.href = window.URL.createObjectURL(res.data);
+          tempLink.setAttribute('download', filename);
+          tempLink.click();
+        })
+        .catch((err) => {
+          
+        })
+    }
+
+    if (formaticProps.data.store) {
+      const emitter = formaticProps.data.getEmitter();
+      emitter.on(Events.PageRender, data => {
+        const splitcontainer = document.getElementById(`formatic-page-container-${env.PAGE_ID}`);
+        splitcontainer.classList.add('flex-section-container');
+        const leftPage = document.getElementById(`formatic-section-container-${env.SECTION_LEFT}`);
+        leftPage.classList.add('section-one');
+        const rightPage = document.getElementById(`formatic-section-container-${env.SECTION_RIGHT}`);
+        rightPage.classList.add('section-two');
+        if (env.UPLOAD_ABOVE) {
+          createDownloadSection();
+        };
+      });
+    };
+  }, [submission]);
 
   return (
     <Formatic
@@ -90,7 +170,6 @@ export default function FormEmbedPage(props) {
   return (
     <div className="max-w-7xl	m-auto px-8">
       <ErrorBoundary>
-        <h3>Form</h3>
         <FullscreenForm
           key={channel}
           channel={channel}

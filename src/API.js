@@ -33,6 +33,9 @@ const API = {
   submissions: {
     retrieve: (id) => client.get(`submissions/${id}`),
   },
+  downloadFile: {
+    retrieve: (submissionId, uploadId) => client.get(`submissions/${submissionId}/files/uploads/${uploadId}`, {responseType: 'blob'}),
+  }
 };
 
 export default API;

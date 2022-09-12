@@ -1,7 +1,7 @@
 {
 	"id": "com.transformd.ext-approval-example",
 	"manifest_version": 1,
-	"version": "0.0.25",
+	"version": "0.0.266",
 	"name": "Example",
 	"icon": "icon.svg",
 	"environment": [
@@ -28,18 +28,39 @@
 			"is_required": true
 		},
 		{
-			"key": "CHANNEL_BASIC",
-			"label": "Basic Channel",
-			"description": "Form Branch",
+			"key": "CHANNEL",
+			"label": "Channel",
+			"description": "Form Channel",
 			"type": "string",
 			"is_required": true
 		},
 		{
-			"key": "CHANNEL_ADVANCED",
-			"label": "Advanced Channel",
-			"description": "Form Branch",
+			"key": "PAGE_ID",
+			"label": "Page ID",
+			"description": "ID of the Page to take the sections from",
 			"type": "string",
 			"is_required": true
+		},
+		{
+			"key": "SECTION_LEFT",
+			"label": "Left-Side Section",
+			"description": "Section to be used on the left-side of the app",
+			"type": "string",
+			"is_required": true
+		},
+		{
+			"key": "SECTION_RIGHT",
+			"label": "Right-Side Section",
+			"description": "Section to be used on the right-side of the app",
+			"type": "string",
+			"is_required": true
+		},
+		{
+			"key": "UPLOAD_ABOVE",
+			"label": "Show uploads on the right above field with ID:",
+			"description":"Any files uploaded will be visible in a list above this field from the right-hand side",
+			"type": "string",
+			"is_required": false
 		}
 	],
 	"routes": {
@@ -54,23 +75,7 @@
 				"channel": {
 					"type": "string",
 					"location": "path",
-					"source": "env.CHANNEL_BASIC"
-				},
-				"submission_id": {
-					"type": "string",
-					"location": "path",
-					"source" : "assignment.subject.id"
-				}
-			}
-		},
-		"advanced": {
-			"name": "Form",
-			"uri": "/form/{{channel}}/{{submission_id}}",
-			"params": {
-				"channel": {
-					"type": "string",
-					"location": "path",
-					"source": "env.CHANNEL_ADVANCED"
+					"source": "env.CHANNEL"
 				},
 				"submission_id": {
 					"type": "string",
@@ -90,18 +95,7 @@
 				"color": "#222222"
 			},
 			"active": true,
-			"menu": [
-				{
-					"id": "basic",
-					"route": "basic",
-					"text": "Basic"
-				},
-				{
-					"id": "advanced",
-					"route": "advanced",
-					"text": "Advanced"
-				}
-			]
+			"menu": []
 		}
 	}
 }

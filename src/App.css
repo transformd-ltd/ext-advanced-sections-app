@@ -43,4 +43,28 @@ a {
 button.btn {
   @apply text-white bg-gray-700 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-gray-300 rounded-lg text-sm w-full sm:w-auto px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
 }
-
+.section-one {
+  flex-basis:66%;
+  margin-right: 32px !important;
+  align-items: flex-start;
+}
+.section-two {
+  flex-basis: 33%;
+  margin-left: 32px !important;
+  align-items: flex-start;
+  display: block;
+}
+.flex-section-container {
+  display: flex;
+}
+.upload-header {
+  margin: .67em 0 !important;
+}
+.download-buttons {
+  margin-left: 24px !important;
+  background: none !important;
+  box-shadow: none !important;
+  color: blue !important;
+  justify-content: start !important;
+  display: block;
+}
