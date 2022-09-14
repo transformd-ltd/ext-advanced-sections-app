@@ -51,9 +51,9 @@ function FullscreenForm(props) {
               for (let fileCounter = 0; fileCounter < res.data.values[field].files.length; fileCounter++) {
                 var downloadButton = document.createElement("button");
                 downloadButton.className = "download-buttons";
-                var buttonLabel = document.createTextNode(res.data.values[field].files[fileCounter].filename);
+                var buttonLabel = document.createTextNode(`${field}.${res.data.values[field].files[fileCounter].filename.split('.').pop()}`);
                 downloadButton.appendChild(buttonLabel);
-                downloadButton.addEventListener('click', async () => {downloadOnClick(res.data.values[field].files[fileCounter].id, res.data.values[field].files[fileCounter].filename)});
+                downloadButton.addEventListener('click', async () => {downloadOnClick(res.data.values[field].files[fileCounter].id, `${field}.${res.data.values[field].files[fileCounter].filename.split('.').pop()}`)});
                 downloadSection.append(downloadButton);
               }
             }
@@ -65,9 +65,9 @@ function FullscreenForm(props) {
                     for (let fileCounter = 0; fileCounter < res.data.values[field].value[repeatableCounter].values[fieldName].value.length; fileCounter++) {
                       var downloadButton = document.createElement("button");
                       downloadButton.className = "download-buttons";
-                      var buttonLabel = document.createTextNode(res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename);
+                      var buttonLabel = document.createTextNode(`${fieldName}.${res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename.split('.').pop()}`);
                       downloadButton.appendChild(buttonLabel);
-                      downloadButton.addEventListener('click', async () => {downloadOnClick(res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].id, res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename)});
+                      downloadButton.addEventListener('click', async () => {downloadOnClick(res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].upload_id, `${fieldName}.${res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename.split('.').pop()}`)});
                       downloadSection.append(downloadButton);
                     }
                   }
@@ -113,7 +113,7 @@ function FullscreenForm(props) {
         };
       });
     };
-  }, [submission]);
+  }, [formaticProps.data]);
 
   return (
     <Formatic
