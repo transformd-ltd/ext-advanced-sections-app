@@ -1,7 +1,7 @@
 {
 	"id": "com.transformd.ext-approval-example",
 	"manifest_version": 1,
-	"version": "0.0.284",
+	"version": "0.0.293",
 	"name": "Example",
 	"icon": "icon.svg",
 	"environment": [
@@ -59,6 +59,13 @@
 			"key": "UPLOAD_ABOVE",
 			"label": "Show uploads on the right above field with ID:",
 			"description":"Any files uploaded will be visible in a list above this field from the right-hand side",
+			"type": "string",
+			"is_required": false
+		},
+		{
+			"key": "UPLOAD_SECTION_TITLE",
+			"label": "The title to appear above the list of uploads:",
+			"description":"Any files uploaded will be visible in a list in a section with this title",
 			"type": "string",
 			"is_required": false
 		}

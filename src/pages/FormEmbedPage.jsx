@@ -40,8 +40,13 @@ function FullscreenForm(props) {
       var downloadSection = document.createElement('div');
       downloadSection.className = "upload-header";
       var sectionHeader = document.createElement('h1');
-      var headerContent = document.createTextNode('Uploads');
-      sectionHeader.appendChild(headerContent);
+      if (env.UPLOAD_SECTION_TITLE) {
+        var headerContent = document.createTextNode(env.UPLOAD_SECTION_TITLE);
+        sectionHeader.appendChild(headerContent);
+      } else {
+        var headerContent = document.createTextNode('Uploads');
+        sectionHeader.appendChild(headerContent);
+      }
       downloadSection.append(sectionHeader);
       API.submissions.retrieve(formaticProps.submissionId)
       .then((res) => {
@@ -51,9 +56,9 @@ function FullscreenForm(props) {
               for (let fileCounter = 0; fileCounter < res.data.values[field].files.length; fileCounter++) {
                 var downloadButton = document.createElement("button");
                 downloadButton.className = "download-buttons";
-                var buttonLabel = document.createTextNode(`${field}.${res.data.values[field].files[fileCounter].filename.split('.').pop()}`);
+                var buttonLabel = document.createTextNode(fileCounter > 0 ? `${field}_(${fileCounter}).${res.data.values[field].files[fileCounter].filename.split('.').pop()}` : `${field}.${res.data.values[field].files[fileCounter].filename.split('.').pop()}`);
                 downloadButton.appendChild(buttonLabel);
-                downloadButton.addEventListener('click', async () => {downloadOnClick(res.data.values[field].files[fileCounter].id, `${field}.${res.data.values[field].files[fileCounter].filename.split('.').pop()}`)});
+                downloadButton.addEventListener('click', async () => {downloadOnClick(res.data.values[field].files[fileCounter].id, fileCounter > 0 ? `${field}_(${fileCounter}).${res.data.values[field].files[fileCounter].filename.split('.').pop()}` : `${field}.${res.data.values[field].files[fileCounter].filename.split('.').pop()}`)});
                 downloadSection.append(downloadButton);
               }
             }
@@ -65,9 +70,9 @@ function FullscreenForm(props) {
                     for (let fileCounter = 0; fileCounter < res.data.values[field].value[repeatableCounter].values[fieldName].value.length; fileCounter++) {
                       var downloadButton = document.createElement("button");
                       downloadButton.className = "download-buttons";
-                      var buttonLabel = document.createTextNode(`${fieldName}.${res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename.split('.').pop()}`);
+                      var buttonLabel = document.createTextNode(fileCounter > 0 ? `${fieldName}_(${fileCounter}).${res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename.split('.').pop()}` : `${fieldName}.${res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename.split('.').pop()}`);
                       downloadButton.appendChild(buttonLabel);
-                      downloadButton.addEventListener('click', async () => {downloadOnClick(res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].upload_id, `${fieldName}.${res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename.split('.').pop()}`)});
+                      downloadButton.addEventListener('click', async () => {downloadOnClick(res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].upload_id, fileCounter > 0 ? `${fieldName}_(${fileCounter}).${res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename.split('.').pop()}` : `${fieldName}.${res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename.split('.').pop()}`)});
                       downloadSection.append(downloadButton);
                     }
                   }
