@@ -108,14 +108,16 @@ function FullscreenForm(props) {
       const emitter = formaticProps.data.getEmitter();
       emitter.on(Events.PageRender, data => {
         const splitcontainer = document.getElementById(`formatic-page-container-${env.PAGE_ID}`);
-        splitcontainer.classList.add('flex-section-container');
-        const leftPage = document.getElementById(`formatic-section-container-${env.SECTION_LEFT}`);
-        leftPage.classList.add('section-one');
-        const rightPage = document.getElementById(`formatic-section-container-${env.SECTION_RIGHT}`);
-        rightPage.classList.add('section-two');
-        if (env.UPLOAD_ABOVE) {
-          createDownloadSection();
-        };
+        if (splitcontainer) {
+          splitcontainer.classList.add('flex-section-container');
+          const leftPage = document.getElementById(`formatic-section-container-${env.SECTION_LEFT}`);
+          leftPage.classList.add('section-one');
+          const rightPage = document.getElementById(`formatic-section-container-${env.SECTION_RIGHT}`);
+          rightPage.classList.add('section-two');
+          if (env.UPLOAD_ABOVE) {
+            createDownloadSection();
+          };
+        }
       });
     };
   }, [formaticProps.data]);
