@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import Formatic, { Data, Events } from "@transformd-ltd/sdk";
 import axios from "axios";
 import get from "lodash/get";
+import isEmpty from 'lodash/isEmpty';
 import API from "../API";
 import {useParams} from "react-router-dom";
 import ErrorBoundary from "../components/ErrorBoundary";
@@ -48,32 +49,47 @@ function FullscreenForm(props) {
         sectionHeader.appendChild(headerContent);
       }
       downloadSection.append(sectionHeader);
+
+      const arrUploadId = env.UPLOAD_SECTION_FIELD_IDS.split(',').map(function (fieldId) {
+        return fieldId.trim();
+      });
+
       API.submissions.retrieve(formaticProps.submissionId)
       .then((res) => {
         for (const field in res.data.values) {
           if (res.data.values[field].type === "fileUpload") {
-            if (res.data.values[field].files) {
-              for (let fileCounter = 0; fileCounter < res.data.values[field].files.length; fileCounter++) {
-                var downloadButton = document.createElement("button");
-                downloadButton.className = "download-buttons";
-                var buttonLabel = document.createTextNode(fileCounter > 0 ? `${field}_(${fileCounter}).${res.data.values[field].files[fileCounter].filename.split('.').pop()}` : `${field}.${res.data.values[field].files[fileCounter].filename.split('.').pop()}`);
-                downloadButton.appendChild(buttonLabel);
-                downloadButton.addEventListener('click', async () => {downloadOnClick(res.data.values[field].files[fileCounter].id, fileCounter > 0 ? `${field}_(${fileCounter}).${res.data.values[field].files[fileCounter].filename.split('.').pop()}` : `${field}.${res.data.values[field].files[fileCounter].filename.split('.').pop()}`)});
-                downloadSection.append(downloadButton);
+            const fieldId = res.data.values[field].self_url.split('/');
+            for (const allowedId of arrUploadId) {
+              if (fieldId[fieldId.length - 1] === allowedId) {
+                if (!isEmpty(res.data.values[field].files)) {
+                  for (let fileCounter = 0; fileCounter < res.data.values[field].files.length; fileCounter++) {
+                    var downloadButton = document.createElement("button");
+                    downloadButton.className = "download-buttons";
+                    var buttonLabel = document.createTextNode(fileCounter > 0 ? `${field}_(${fileCounter}).${res.data.values[field].files[fileCounter].filename.split('.').pop()}` : `${field}.${res.data.values[field].files[fileCounter].filename.split('.').pop()}`);
+                    downloadButton.appendChild(buttonLabel);
+                    downloadButton.addEventListener('click', async () => {downloadOnClick(res.data.values[field].files[fileCounter].id, fileCounter > 0 ? `${field}_(${fileCounter}).${res.data.values[field].files[fileCounter].filename.split('.').pop()}` : `${field}.${res.data.values[field].files[fileCounter].filename.split('.').pop()}`)});
+                    downloadSection.append(downloadButton);
+                  }
+                } 
               }
             }
           } else if (res.data.values[field].type === "repeatable") {
             for (let repeatableCounter = 0; repeatableCounter < res.data.values[field].value.length; repeatableCounter++) {
               for (const fieldName in res.data.values[field].value[repeatableCounter].values) {
                 if (res.data.values[field].value[repeatableCounter].values[fieldName].type === "fileUpload") {
-                  if (res.data.values[field].value[repeatableCounter].values[fieldName].value) {
-                    for (let fileCounter = 0; fileCounter < res.data.values[field].value[repeatableCounter].values[fieldName].value.length; fileCounter++) {
-                      var downloadButton = document.createElement("button");
-                      downloadButton.className = "download-buttons";
-                      var buttonLabel = document.createTextNode(fileCounter > 0 ? `${fieldName}_(${fileCounter}).${res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename.split('.').pop()}` : `${fieldName}.${res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename.split('.').pop()}`);
-                      downloadButton.appendChild(buttonLabel);
-                      downloadButton.addEventListener('click', async () => {downloadOnClick(res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].upload_id, fileCounter > 0 ? `${fieldName}_(${fileCounter}).${res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename.split('.').pop()}` : `${fieldName}.${res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename.split('.').pop()}`)});
-                      downloadSection.append(downloadButton);
+                  const fieldId = res.data.values[field].value[repeatableCounter].values[fieldName].field_id;
+                  for (const allowedId of arrUploadId) {
+                    if (fieldId === allowedId) {
+                      if (!isEmpty(res.data.values[field].value[repeatableCounter].values[fieldName].value)) {
+                        for (let fileCounter = 0; fileCounter < res.data.values[field].value[repeatableCounter].values[fieldName].value.length; fileCounter++) {
+                          var downloadButton = document.createElement("button");
+                          downloadButton.className = "download-buttons";
+                          var buttonLabel = document.createTextNode(fileCounter > 0 ? `${fieldName}_(${fileCounter}).${res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename.split('.').pop()}` : `${fieldName}.${res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename.split('.').pop()}`);
+                          downloadButton.appendChild(buttonLabel);
+                          downloadButton.addEventListener('click', async () => {downloadOnClick(res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].upload_id, fileCounter > 0 ? `${fieldName}_(${fileCounter}).${res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename.split('.').pop()}` : `${fieldName}.${res.data.values[field].value[repeatableCounter].values[fieldName].value[fileCounter].filename.split('.').pop()}`)});
+                          downloadSection.append(downloadButton);
+                        }
+                      }
                     }
                   }
                 }
