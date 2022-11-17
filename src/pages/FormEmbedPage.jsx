@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useMemo } from "react";
-import Formatic, { Data, Events } from "@transformd-ltd/sdk";
+import Formatic, { Overrides, Data, Events } from "@transformd-ltd/sdk";
+import ElectronicVerification from "@transformd-ltd/electronic-verification";
+import AbnLookupComponent from "@transformd-ltd/abn-lookup";
+import ProfileLookupComponent from "@transformd-ltd/profile-lookup";
 import axios from "axios";
 import get from "lodash/get";
 import isEmpty from 'lodash/isEmpty';
@@ -141,7 +144,21 @@ function FullscreenForm(props) {
   return (
     <Formatic
       {...formaticProps}
-    />
+    >
+      <Overrides.OverrideFieldContainer
+        component={AbnLookupComponent}
+        // this dosnt work but we need this for api
+        type="abnLookup"
+      />
+      <Overrides.OverrideFieldContainer
+        type="electronicVerification"
+        component={ElectronicVerification}
+      />
+      <Overrides.OverrideFieldContainer
+        type="profileLookup"
+        component={ProfileLookupComponent}
+      />
+    </Formatic>
   )
 
 }
