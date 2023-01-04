@@ -289,28 +289,10 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@blueprintjs/colors@^4.0.0-alpha.3", "@blueprintjs/colors@^4.1.10":
+"@blueprintjs/colors@^4.1.10":
   version "4.1.10"
   resolved "https://registry.yarnpkg.com/@blueprintjs/colors/-/colors-4.1.10.tgz#908ce1483ccf330b4d7d30e82091b3d6fbc26020"
   integrity sha512-p1rgfijpZi+r2xskyRi3uF8DRq08rb26u9Gymi0p4ZNZq/iLJQ1Fj1jfT8yh2yc6eCfs8GlH6iDNdU387wEK3w==
-
-"@blueprintjs/core@^3.36.0":
-  version "3.54.0"
-  resolved "https://registry.yarnpkg.com/@blueprintjs/core/-/core-3.54.0.tgz#7269f34eccdf0d2874377c5ad973ca2a31562221"
-  integrity sha512-u2c1s6MNn0ocxhnC6CuiG5g3KV6b4cKUvSobznepA9SC3/AL1s3XOvT7DLWoHRv2B/vBOHFYEDzLw2/vlcGGZg==
-  dependencies:
-    "@blueprintjs/colors" "^4.0.0-alpha.3"
-    "@blueprintjs/icons" "^3.33.0"
-    "@juggle/resize-observer" "^3.3.1"
-    "@types/dom4" "^2.0.1"
-    classnames "^2.2"
-    dom4 "^2.1.5"
-    normalize.css "^8.0.1"
-    popper.js "^1.16.1"
-    react-lifecycles-compat "^3.0.4"
-    react-popper "^1.3.7"
-    react-transition-group "^2.9.0"
-    tslib "~2.3.1"
 
 "@blueprintjs/core@^4.5.1":
   version "4.13.0"
@@ -327,14 +309,6 @@
     popper.js "^1.16.1"
     react-popper "^1.3.11"
     react-transition-group "^4.4.5"
-    tslib "~2.3.1"
-
-"@blueprintjs/icons@^3.33.0":
-  version "3.33.0"
-  resolved "https://registry.yarnpkg.com/@blueprintjs/icons/-/icons-3.33.0.tgz#4dacdb7731abdf08d1ab240f3a23a185df60918b"
-  integrity sha512-Q6qoSDIm0kRYQZISm59UUcDCpV3oeHulkLuh3bSlw0HhcSjvEQh2PSYbtaifM60Q4aK4PCd6bwJHg7lvF1x5fQ==
-  dependencies:
-    classnames "^2.2"
     tslib "~2.3.1"
 
 "@blueprintjs/icons@^4.11.0":
@@ -438,7 +412,7 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@juggle/resize-observer@^3.3.1", "@juggle/resize-observer@^3.4.0":
+"@juggle/resize-observer@^3.4.0":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.4.0.tgz#08d6c5e20cf7e4cc02fd181c4b0c225cd31dbb60"
   integrity sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==
@@ -518,23 +492,6 @@
     qs "^6.5.2"
     react-text-mask "^5.4.3"
 
-"@transformd-ltd/docusign-esignature@^0.3.7":
-  version "0.3.8"
-  resolved "https://npm.pkg.github.com/download/@transformd-ltd/docusign-esignature/0.3.8/5d1b2be5ff6596668205599f86b17f3d13342bee#5d1b2be5ff6596668205599f86b17f3d13342bee"
-  integrity sha512-fnujuMR1mZR4R2PKND4VgY/0AzwmKokEVBgH80oNaLrbFEY7/qqD11FUPBxXCacuC9UxqWgYIGsWRq/Lom3IEA==
-  dependencies:
-    "@blueprintjs/core" "^3.36.0"
-    "@transformd-ltd/theme-fermi" "^1.0.69"
-    axios "^0.24.0"
-    classnames "^2.2.6"
-    graphql-tag "^2.0.0"
-    handlebars "^4.7.6"
-    lodash "^4.17.11"
-    prop-types "^15.6.2"
-    qs "^6.9.4"
-    react-apollo "^1.4.16"
-    react-text-mask "^5.4.3"
-
 "@transformd-ltd/electronic-verification@^0.1.5":
   version "0.1.5"
   resolved "https://npm.pkg.github.com/download/@transformd-ltd/electronic-verification/0.1.5/76db5fb59810feacfac39a961ff040047a6b4178#76db5fb59810feacfac39a961ff040047a6b4178"
@@ -547,35 +504,12 @@
     react-helmet "^6.1.0"
     react-text-mask "^5.4.3"
 
-"@transformd-ltd/email-validation@^0.1.26":
-  version "0.1.28"
-  resolved "https://npm.pkg.github.com/download/@transformd-ltd/email-validation/0.1.28/27a8826a60b6f05cbcc6f0b0d59bd23942cef6a1#27a8826a60b6f05cbcc6f0b0d59bd23942cef6a1"
-  integrity sha512-/oaXyDn/ZVu0NKh3VwF+M87n/EU9ystskO3C03p5bA41J5WCdUH9D2+vKTZO4DXRPz+WCeyercSC2vcEAmnEIw==
-  dependencies:
-    axios "^0.19.2"
-    classnames "^2.2.6"
-    cleave.js "^1.4.3"
-    lodash "^4.17.10"
-    prop-types "^15.6.2"
-    qs "^6.5.2"
-
 "@transformd-ltd/form-logic@^0.0.15":
   version "0.0.15"
   resolved "https://npm.pkg.github.com/download/@transformd-ltd/form-logic/0.0.15/81838417d63308478967a38f7819e44c8bd56676#81838417d63308478967a38f7819e44c8bd56676"
   integrity sha512-q1jm2zXAdtrglZxTuXCRMzFof3LFWrZRZv0MAKXas659nq+vop9QIhH6YCzcHE0rIiJt/p2ODRbgvoMobBDMzw==
   dependencies:
     ramda "^0.25.0"
-
-"@transformd-ltd/mobile-validation@^0.1.27":
-  version "0.1.30"
-  resolved "https://npm.pkg.github.com/download/@transformd-ltd/mobile-validation/0.1.30/016f250e60886e43ea93e134096a20ac91b69e28#016f250e60886e43ea93e134096a20ac91b69e28"
-  integrity sha512-240ktWsAIvmpqTKR4ePf0NC84e+vaoB6ApP/SwZhee9llZTyNTWRg0LAhP2hMWls7k50iapmskCTYDGwPesusw==
-  dependencies:
-    axios "^0.24.0"
-    classnames "^2.2.6"
-    lodash "^4.17.10"
-    prop-types "^15.6.2"
-    qs "^6.5.2"
 
 "@transformd-ltd/profile-lookup@^0.1.13":
   version "0.1.13"
@@ -655,7 +589,7 @@
     qs "^6.5.2"
     react-text-mask "^5.4.3"
 
-"@types/dom4@^2.0.1", "@types/dom4@^2.0.2":
+"@types/dom4@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@types/dom4/-/dom4-2.0.2.tgz#6495303f049689ce936ed328a3e5ede9c51408ee"
   integrity sha512-Rt4IC1T7xkCWa0OG1oSsPa0iqnxlDeQqKXZAHrQGLb7wFGncWm85MaxKUjAGejOrUynOgWlFi4c6S6IyJwoK4g==
@@ -1123,20 +1057,6 @@ axe-core@^4.4.3:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.6.1.tgz#79cccdee3e3ab61a8f42c458d4123a6768e6fbce"
   integrity sha512-lCZN5XRuOnpG4bpMq8v0khrWtUOn+i8lZSb6wHZH56ZfbIEv6XwJV84AAueh9/zi7qPVJ/E4yz6fmsiyOmXR4w==
 
-axios@^0.19.2:
-  version "0.19.2"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
-  integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
-  dependencies:
-    follow-redirects "1.5.10"
-
-axios@^0.24.0:
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.24.0.tgz#804e6fa1e4b9c5288501dd9dff56a7a0940d20d6"
-  integrity sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA==
-  dependencies:
-    follow-redirects "^1.14.4"
-
 axios@^0.25.0:
   version "0.25.0"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.25.0.tgz#349cfbb31331a9b4453190791760a8d35b093e0a"
@@ -1307,7 +1227,7 @@ chokidar@^3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
-classnames@2.x, classnames@^2.0.0, classnames@^2.2, classnames@^2.2.0, classnames@^2.2.1, classnames@^2.2.3, classnames@^2.2.5, classnames@^2.2.6, classnames@^2.3.1:
+classnames@2.x, classnames@^2.0.0, classnames@^2.2.0, classnames@^2.2.1, classnames@^2.2.3, classnames@^2.2.5, classnames@^2.2.6, classnames@^2.3.1:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
   integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
@@ -1321,11 +1241,6 @@ cleave.js@1.4.10:
   version "1.4.10"
   resolved "https://registry.yarnpkg.com/cleave.js/-/cleave.js-1.4.10.tgz#40505827f07c148be6822522504901fca278a445"
   integrity sha512-7AWnh+6pgQbbRT+e7WnK/yc+U50zhtQZklvEcKDiFDpfcu3kb300BdV7FMYtGOIsAzD5TKy7KH38ZwgyWyFE2Q==
-
-cleave.js@^1.4.3:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/cleave.js/-/cleave.js-1.6.0.tgz#0e4e011943bdd70c67c9dcf4ff800ce710529171"
-  integrity sha512-ivqesy3j5hQVG3gywPfwKPbi/7ZSftY/UNp5uphnqjr25yI2CP8FS2ODQPzuLXXnNLi29e2+PgPkkiKUXLs/Nw==
 
 color-convert@^1.9.0:
   version "1.9.3"
@@ -1474,13 +1389,6 @@ damerau-levenshtein@^1.0.8:
   resolved "https://registry.yarnpkg.com/damerau-levenshtein/-/damerau-levenshtein-1.0.8.tgz#b43d286ccbd36bc5b2f7ed41caf2d0aba1f8a6e7"
   integrity sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==
 
-debug@=3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
-  integrity sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
-  dependencies:
-    ms "2.0.0"
-
 debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -1586,13 +1494,6 @@ dom-closest@^0.2.0:
   integrity sha512-6neTn1BtJlTSt+XSISXpnOsF1uni1CHsP/tmzZMGWxasYFHsBOqrHPnzmneqEgKhpagnfnfSfbvRRW0xFsBHAA==
   dependencies:
     dom-matches ">=1.0.1"
-
-dom-helpers@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-3.4.0.tgz#e9b369700f959f62ecde5a6babde4bccd9169af8"
-  integrity sha512-LnuPJ+dwqKDIyotW1VzmOZ5TONUN7CwkCR5hrgawTUbkBGYdeoNLZo6nNfGkCrjtE1nXXaj7iMMpDa8/d9WoIA==
-  dependencies:
-    "@babel/runtime" "^7.1.2"
 
 dom-helpers@^5.0.1:
   version "5.2.1"
@@ -2242,14 +2143,7 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
   integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
 
-follow-redirects@1.5.10:
-  version "1.5.10"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
-  integrity sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
-  dependencies:
-    debug "=3.1.0"
-
-follow-redirects@^1.14.4, follow-redirects@^1.14.7, follow-redirects@^1.14.9:
+follow-redirects@^1.14.7, follow-redirects@^1.14.9:
   version "1.15.2"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
   integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
@@ -2413,7 +2307,7 @@ hammerjs@^2.0.8:
   resolved "https://registry.yarnpkg.com/hammerjs/-/hammerjs-2.0.8.tgz#04ef77862cff2bb79d30f7692095930222bf60f1"
   integrity sha512-tSQXBXS/MWQOn/RKckawJ61vvsDpCom87JgxiYdGwHdOa0ht0vzUWDlfioofFCRU0L+6NGDt6XzbgoJvZkMeRQ==
 
-handlebars@^4.1.2, handlebars@^4.2.1, handlebars@^4.7.6:
+handlebars@^4.1.2, handlebars@^4.2.1:
   version "4.7.7"
   resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.7.7.tgz#9ce33416aad02dbd6c8fafa8240d5d98004945a1"
   integrity sha512-aAcXm5OAfE/8IXkcZvCepKU3VzW1/39Fb5ZuqMtgI/hT8X2YgoMvBY5dLhq/cpOvw7Lk1nK/UF71aLG/ZnVYRA==
@@ -3335,7 +3229,7 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-qs@^6.5.2, qs@^6.9.4:
+qs@^6.5.2:
   version "6.11.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.11.0.tgz#fd0d963446f7a65e1367e01abd85429453f0c37a"
   integrity sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q==
@@ -4184,7 +4078,7 @@ rc-util@^4.0.4, rc-util@^4.1.0, rc-util@^4.1.1, rc-util@^4.13.0, rc-util@^4.15.3
     react-lifecycles-compat "^3.0.4"
     shallowequal "^1.1.0"
 
-react-apollo@^1.4.16, react-apollo@^1.4.2:
+react-apollo@^1.4.2:
   version "1.4.16"
   resolved "https://registry.yarnpkg.com/react-apollo/-/react-apollo-1.4.16.tgz#62a623458b67a174ff8ef25f64e7b42531518e19"
   integrity sha512-/Htq9zI/u/PpIdoH/qBU9Zty09U23biH585H52GvEF0m/kK9te9QFCnYfjKpB30DS6YleIk1uKNcqeK3HEfU6w==
@@ -4251,7 +4145,7 @@ react-lifecycles-compat@^3.0.0, react-lifecycles-compat@^3.0.2, react-lifecycles
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-popper@^1.3.11, react-popper@^1.3.7:
+react-popper@^1.3.11:
   version "1.3.11"
   resolved "https://registry.yarnpkg.com/react-popper/-/react-popper-1.3.11.tgz#a2cc3f0a67b75b66cfa62d2c409f9dd1fcc71ffd"
   integrity sha512-VSA/bS+pSndSF2fiasHK/PTEEAyOpX60+H5EPAjoArr8JGm+oihu4UbrqcEBpQibJxBVCpYyjAX7abJ+7DoYVg==
@@ -4371,16 +4265,6 @@ react-text-mask@^5.4.3:
   integrity sha512-SLJlJQxa0uonMXsnXRpv5abIepGmHz77ylQcra0GNd7Jtk4Wj2Mtp85uGQHv1avba2uI8ZvRpIEQPpJKsqRGYw==
   dependencies:
     prop-types "^15.5.6"
-
-react-transition-group@^2.9.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.9.0.tgz#df9cdb025796211151a436c69a8f3b97b5b07c8d"
-  integrity sha512-+HzNTCHpeQyl4MJ/bdE0u6XRMe9+XG/+aL4mCxVN4DnPBQ0/5bfHWPDuOZUzYdMj94daZaZdCCc1Dzt9R/xSSg==
-  dependencies:
-    dom-helpers "^3.4.0"
-    loose-envify "^1.4.0"
-    prop-types "^15.6.2"
-    react-lifecycles-compat "^3.0.4"
 
 react-transition-group@^4.4.5:
   version "4.4.5"

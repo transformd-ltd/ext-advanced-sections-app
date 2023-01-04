@@ -3,6 +3,7 @@ import Formatic, { Overrides, Data, Events } from "@transformd-ltd/sdk";
 import ElectronicVerification from "@transformd-ltd/electronic-verification";
 import AbnLookupComponent from "@transformd-ltd/abn-lookup";
 import ProfileLookupComponent from "@transformd-ltd/profile-lookup";
+import UserLookupComponent from '@transformd-ltd/user-lookup';
 import axios from "axios";
 import get from "lodash/get";
 import isEmpty from 'lodash/isEmpty';
@@ -157,6 +158,10 @@ function FullscreenForm(props) {
       <Overrides.OverrideFieldContainer
         type="profileLookup"
         component={ProfileLookupComponent}
+      />
+      <Overrides.OverrideFieldContainer
+        type="userLookup"
+        component={UserLookupComponent}
       />
     </Formatic>
   )
