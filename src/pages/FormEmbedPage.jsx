@@ -34,7 +34,7 @@ function FullscreenForm(props) {
     submissionId: submission.id,
     formId: Number(env.FORM_ID),
     apiKey: env.API_KEY,
-    environment: env.BRANCH,
+    environment: submission.branch,
     channel: channel,
   };
   console.log({ formaticProps });
