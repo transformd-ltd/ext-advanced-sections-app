@@ -1,7 +1,7 @@
 {
 	"id": "com.transformd.ext-approval-example",
 	"manifest_version": 1,
-	"version": "0.7.53",
+	"version": "0.7.54",
 	"name": "Example",
 	"icon": "icon.svg",
 	"environment": [
@@ -72,7 +72,7 @@
 		{
 			"key": "TASK_ACTION_BUTTONS",
 			"label": "Task action buttons:",
-			"description":"JSON array of objects containing data for the task action buttons. Keys; 'fieldId', 'outcome', 'redirectPage'. Please note that redirectPage accepts both page ID's (to navigate to a from page) and full external URLs ",
+			"description":"JSON array of objects containing data for the task action buttons. Keys; 'buttonFieldId', 'outcome', 'redirectPage'. Please note that redirectPage accepts both page ID's (to navigate to a from page) and full external URLs ",
 			"type": "string",
 			"is_required": false
 		}

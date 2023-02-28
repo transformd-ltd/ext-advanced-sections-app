@@ -227,13 +227,11 @@ function FullscreenForm(props) {
     };
 
     const apiV3ActionTask = (actionButton) => {
-
       API.assignments
         .update(assignment.task.id, assignment.id, {
           current_state: actionButton.outcome,
         })
-        .then((data) => {
-          console.log(data);
+        .then(() => {
           setOutcomeResponse({
             outcomeType: "success",
             outcomeMessage: "Task successfully updated",
@@ -241,8 +239,7 @@ function FullscreenForm(props) {
 
           // if redirectPage is a URL:
           if (actionButton.redirectPage.includes("http")) {
-            window.top.location.href =
-            actionButton.redirectPage;
+            window.top.location.href = actionButton.redirectPage;
           } else {
             formaticProps.data.store.dispatch({
               type: "SET_CURRENT_PAGE",
