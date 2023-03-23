@@ -1,0 +1,15 @@
+@mixin formatic-label() {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+
+  .formatic-label__content,
+  .formatic-label__required {
+    line-height: 20px;
+    display: inline;
+  }
+}
+
+.formatic-label {
+  @include formatic-label();
+}

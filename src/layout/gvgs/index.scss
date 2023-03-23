@@ -1,0 +1,178 @@
+$primary-color: #00205B;
+$secondary-color: #FFC72C;
+$background-color: #FFF;
+$border-color: #FFC72C;
+$border: 1px solid $border-color;
+$border-radius: 0px;
+$font-family: Oswald;
+$font-size: 16px;
+
+.formatic--transformd {
+  font-family: $font-family;
+  font-size: $font-size;
+
+  h1 {
+    color: $primary-color;
+  }
+
+  .formatic-connectivity-component__container {
+    position: fixed;
+    top: 0;
+    background: $secondary-color;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: $font-size;
+    z-index: 123;
+    line-height: 35px;
+  }
+
+  @import "./fields/button";
+  @import "./fields/action-bar";
+
+  .formatic-field-container {
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    @import "./fields/text";
+    @import "./fields/dropdown";
+    @import "./fields/radio";
+    @import "./fields/email";
+    @import "./fields/sms-verification";
+    @import "./fields/email-verification";
+    @import "./fields/abn-lookup";
+    @import "./fields/address-lookup";
+    @import "./fields/profile-lookup";
+    @import "./fields/datepicker";
+    @import "./fields/heading";
+    @import "./fields/repeatable";
+    @import "./fields/review-table";
+    @import "./fields/upload";
+    @import "./fields/rich-textarea";
+    @import "./fields/digital-signature";
+    @import "./fields/action-button";
+    @import "./fields/bsb";
+    @import './fields/net-promoter-score';
+
+    .formatic-with-help-text__container {
+      position: absolute;
+      right: -12px;
+      top: 10px;
+
+      .formatic-with-help-text__question-mark {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: $primary-color;
+        font-size: 14px;
+        line-height: 14px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  @import "./fields/checkbox";
+  @import "./fields/custom-class";
+  @import "./fields/ev";
+  @import "./helpers/validation";
+}
+
+@import "./fields/progress-bar";
+@import "./custom";
+
+.formatic-address-lookup__auto-complete-dropdown button {
+  font-size: 14px;
+  font-weight: bold;
+  height: 42px;
+  color: #4f4f4f;
+  border: 2px solid $border-color;
+  background-color: transparent;
+  border-radius: 100px;
+  box-shadow: none;
+
+  &:hover,
+  &:focus {
+    box-shadow: none;
+    color: $primary-color;
+    border-color: $primary-color;
+    background-color: transparent;
+    border-radius: 100px;
+    text-decoration: none;
+  }
+
+  &:disabled {
+    color: #53575a;
+    opacity: 0.8;
+  }
+}
+
+.formatic-date-picker__popup-calendar {
+  .ant-calendar-header .ant-calendar-century-select,
+  .ant-calendar-header .ant-calendar-decade-select,
+  .ant-calendar-header .ant-calendar-year-select,
+  .ant-calendar-header .ant-calendar-month-select {
+    color: $primary-color;
+  }
+
+  .ant-calendar-column-header .ant-calendar-column-header-inner {
+    background-color: #FFC72C;
+  }
+
+  &.ant-calendar-picker-container .ant-calendar-today-btn {
+    background-color: $primary-color;
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+
+  .ant-calendar-today .ant-calendar-date {
+    color: $secondary-color;
+    border-color: $secondary-color;
+  }
+
+  .ant-calendar-selected-date .ant-calendar-date {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+  }
+
+  :not(.ant-calendar-selected-date) > .ant-calendar-date:hover {
+    color: $secondary-color;
+    border-color: $secondary-color;
+  }
+}
+
+.formatic-ant-dropdown.ant-select-dropdown .ant-select-dropdown-menu-item-active {
+  background-color: $primary-color;
+}
+
+.ant-tooltip {
+  display: none;
+}
+
+/* GVGS custom class for time fields. */
+.time-inline {
+  flex:33%;
+  padding-inline: 0px 30px;  
+  max-width: 150px;
+}
+
+.date-check-inline1 {
+  flex: auto;
+  
+  padding-inline: 0px 5px;  
+  max-width: 180px;
+  
+}
+
+.date-check-inline2 {
+  flex:auto;
+  
+  padding-inline: 0px 5px;  
+  max-width: 250px;
+  min-width: 250px;
+}

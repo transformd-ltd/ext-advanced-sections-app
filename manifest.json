@@ -1,8 +1,8 @@
 {
-	"id": "com.transformd.ext-approval-example",
+	"id": "com.transformd.gvgsleaveos02",
 	"manifest_version": 1,
-	"version": "0.7.1",
-	"name": "Example",
+	"version": "0.8.0",
+	"name": "Leave Request Approval Task",
 	"icon": "icon.svg",
 	"environment": [
 		{

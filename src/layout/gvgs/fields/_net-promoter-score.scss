@@ -1,0 +1,28 @@
+.formatic-net-promoter-score {
+  .formatic-button {
+    @include formatic-button();
+    width: 100%;
+    height: 50px;
+    padding: 0 8px 0 8px;
+    border: 1px solid darken($border-color, 10%);
+  }
+
+  .formatic-net-promoter-score__button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .formatic-net-promoter-score__description-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px 0 8px;
+  }
+
+  .formatic-net-promoter-score__negative-description {
+    text-align: left;
+  }
+
+  .formatic-net-promoter-score__positive-description {
+    text-align: right;
+  }
+}

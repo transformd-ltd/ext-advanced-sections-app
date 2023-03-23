@@ -1,0 +1,251 @@
+.formatic-field-container {
+  &.formatic-field-border {
+    border: $border;
+    border-radius: 8px;
+    padding: 45px 50px;
+    margin: 10px 0;
+    background: #FFF;
+
+    ul {
+      // list-style: inherit;
+      // padding-left: 18px; // 40px original
+      li {
+        margin: 0 0 0.3rem 2rem;
+      }
+    }
+  }
+
+  &.formatic-dots {
+    ul {
+      list-style: inherit;
+      padding-left: 18px; // 40px original
+    }
+  }
+
+  &.textarea-scroll {
+    overflow-y: auto;
+    height: 400px;
+    background-color: lighten(lightgray, 12.5%);
+    border-radius: 4px;
+    padding: 15px;
+  }
+
+  &.textarea-table {
+    table {
+      border: 1px solid #e2e4e5;
+    }
+
+    tr:not(:last-child) {
+      border-bottom: 1px solid #e2e4e5;
+    }
+
+    th:not(:last-child) {
+      border-right: 1px solid #e2e4e5;
+    }
+
+    th {
+      padding: 5px;
+    }
+  }
+
+  &.formatic-input-symbol-dollar,
+  &.formatic-input-symbol-phone,
+  &.formatic-input-symbol-email,
+  &.formatic-input-symbol-dob,
+  &.formatic-input-symbol-percentage {
+    .formatic-text,
+    .formatic-email {
+      .formatic-text__input {
+        padding-left: 47px;
+      }
+
+      &::before {
+        position: absolute;
+        bottom: 15px;
+        left: 1px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        width: 42px;
+        height: 43px;
+        line-height: 43px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(43, 64, 199, 0.08);
+        color: $primary-color;
+        border-right: $border;
+        font-size: 22px;
+      }
+    }
+
+    .formatic-sms-verification {
+      .formatic-sms-verification__phone {
+        padding-left: 47px;
+      }
+
+      .formatic-sms-verification__phone-field-container {
+        &::before {
+          position: absolute;
+          top: 1px;
+          left: 1px;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          width: 42px;
+          height: 43px;
+          line-height: 43px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: rgba(43, 64, 199, 0.08);
+          color: $primary-color;
+          border-right: $border;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .formatic-repeatable {
+    .formatic-field-container {
+      &.two-col-first,
+      &.two-col-second {
+        width: 49.25%;
+      }
+
+      &.formatic-input-symbol-dollar,
+      &.formatic-input-symbol-percentage,
+      &.formatic-input-symbol-phone,
+      &.formatic-input-symbol-email {
+        .formatic-text {
+          &::before {
+            left: auto;
+          }
+        }
+      }
+    }
+  }
+
+  &.formatic-input-symbol-dollar {
+    .formatic-text,
+    .formatic-email,
+    .formatic-sms-verification__phone-field-container {
+      &::before {
+        content: "$";
+      }
+    }
+  }
+
+  &.formatic-input-symbol-phone {
+    .formatic-text,
+    .formatic-email,
+    .formatic-sms-verification__phone-field-container {
+      &::before {
+        content: url('data:image/svg+xml; utf8, <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.31381 18.4628C7.11692 18.5998 6.70182 18.8067 6.55502 18.8779C6.4125 19.5157 5.84448 19.9796 5.17877 19.9796L2.73172 19.9797C1.41934 19.9797 0.355466 18.9158 0.355469 17.6034L0.355541 2.42884C0.355544 1.12416 1.40746 0.0634937 2.7121 0.0526957L9.06879 7.2517e-05C9.07861 5.19031e-06 9.07862 1.38614e-05 9.08845 0C10.4008 -5.94057e-06 11.4647 1.06388 11.4647 2.37624L11.4648 17.6035C11.4648 18.9159 10.4009 19.9797 9.08853 19.9797L7.28417 19.9796C7.06544 19.9796 6.88814 19.8022 6.88815 19.5835C6.88816 19.3648 7.06549 19.1875 7.28421 19.1875L9.08857 19.1876C9.96346 19.1876 10.6727 18.4784 10.6728 17.6034L10.6726 2.37624C10.6726 1.50133 9.96336 0.792075 9.08845 0.792079C9.0819 0.792089 9.0819 0.792084 9.07535 0.792128L2.71866 0.844751C1.84891 0.851949 1.14762 1.55907 1.14762 2.42886L1.14755 17.6034C1.14755 18.4783 1.8568 19.1876 2.73171 19.1876L5.17876 19.1875C5.49113 19.1875 5.75443 18.9545 5.79247 18.6445C5.81468 18.4635 5.91484 18.3434 6.06036 18.2456C6.11947 18.2059 6.68685 17.9341 6.86142 17.8126C6.94396 17.7552 7.01916 17.6935 7.08778 17.6259L7.13067 17.5837C7.66152 17.0608 7.66846 16.2058 7.14617 15.6743C7.14232 15.6704 7.14232 15.6704 7.13846 15.6666L7.12839 15.6565C6.59093 15.1184 5.71974 15.1184 5.18228 15.6565C4.64172 16.1977 4.63771 17.0741 5.17329 17.6202C5.32644 17.7764 5.32398 18.0271 5.16782 18.1803C5.01165 18.3334 4.76092 18.331 4.60777 18.1748C3.76813 17.3186 3.77442 15.9452 4.62187 15.0967C5.46873 14.2489 6.84194 14.2489 7.6888 15.0967L7.69887 15.1068C7.70501 15.113 7.705 15.1129 7.71111 15.1191C8.53977 15.9624 8.52876 17.3183 7.68651 18.1479L7.64362 18.1902C7.54182 18.2905 7.43201 18.3805 7.31381 18.4628Z" fill="%232b40c7"/></svg>');
+        padding-top: 5px;
+      }
+    }
+  }
+
+  &.formatic-input-symbol-dob {
+    .formatic-text,
+    .formatic-email,
+    .formatic-sms-verification__phone-field-container {
+      &::before {
+        content: url('data:image/svg+xml; utf8, <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.4478 1.34328H13.9701V0.402985C13.9701 0.18806 13.7821 0 13.5672 0C13.3522 0 13.1642 0.18806 13.1642 0.402985V1.34328H4.83582V0.402985C4.83582 0.18806 4.64776 0 4.43284 0C4.21791 0 4.02985 0.18806 4.02985 0.402985V1.34328H2.55224C1.15522 1.34328 0 2.49851 0 3.89552V14.1045C0 15.5015 1.15522 16.6567 2.55224 16.6567H15.4478C16.8448 16.6567 18 15.5015 18 14.1045V3.89552C18 2.47164 16.8448 1.34328 15.4478 1.34328ZM2.55224 2.14925H4.02985V4.16418C4.02985 4.3791 4.21791 4.56716 4.43284 4.56716C4.64776 4.56716 4.83582 4.3791 4.83582 4.16418V2.14925H13.1642V4.16418C13.1642 4.3791 13.3522 4.56716 13.5672 4.56716C13.7821 4.56716 13.9701 4.3791 13.9701 4.16418V2.14925H15.4478C16.4149 2.14925 17.194 2.92836 17.194 3.89552V6.68955H0.80597V3.89552C0.80597 2.92836 1.58507 2.14925 2.55224 2.14925ZM15.4478 15.8507H2.55224C1.58507 15.8507 0.80597 15.0716 0.80597 14.1045V7.49552H17.194V14.1045C17.194 15.0716 16.4149 15.8507 15.4478 15.8507Z" fill="%232b40c7"/></svg>');
+        padding-top: 5px;
+      }
+    }
+  }
+
+  &.formatic-input-symbol-email {
+    .formatic-text,
+    .formatic-email,
+    .formatic-sms-verification__phone-field-container {
+      &::before {
+        content: "@";
+      }
+    }
+  }
+
+  &.formatic-input-symbol-percentage {
+    .formatic-text,
+    .formatic-email,
+    .formatic-sms-verification__phone-field-container {
+      &::before {
+        content: "%";
+      }
+    }
+  }
+
+  &.two-col-list {
+    // .formatic-checkbox-list {
+    // }
+
+    .formatic-radio-list {
+      .formatic-radio-list__items-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -5px;
+        margin-bottom: -5px;
+      }
+
+      .formatic-radio-list__radio-item-container {
+        width: 50%;
+        padding: 5px;
+      }
+    }
+  }
+
+  &.three-col-list {
+    // .formatic-checkbox-list {
+    // }
+
+    .formatic-radio-list {
+      .formatic-radio-list__items-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -5px;
+        margin-bottom: -5px;
+      }
+
+      .formatic-radio-list__radio-item-container {
+        width: 33.33%;
+        padding: 5px;
+      }
+    }
+  }
+
+  &.four-col-list {
+    // .formatic-checkbox-list {
+    // }
+
+    .formatic-radio-list {
+      .formatic-radio-list__items-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -5px;
+        margin-bottom: -5px;
+      }
+
+      .formatic-radio-list__radio-item-container {
+        width: 25%;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.formatic-section-container {
+  &.formatic-section-border {
+    border: $border;
+    border-radius: 8px;
+    padding: 45px 50px;
+    margin: 10px 0;
+    background: #FFF;
+
+    ul {
+      list-style: inherit;
+      padding-left: 18px; // 40px original
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.formatic-repeatable {
+  .formatic-field-container {
+    .formatic-text {
+      &::after {
+        right: 1.5px;
+      }
+    }
+
+    .formatic-file-upload {
+      border: none;
+      max-width: 100%;
+    }
+  }
+
+  .formatic-repeatable__actions {
+    button {
+      @include formatic-button();
+      margin-top: 15px;
+    }
+  }
+
+  .formatic-repeatable__item-remove-button-container {
+    button {
+      color: $primary-color;
+
+      &:hover {
+        color: $secondary-color;
+      }
+
+      &:focus,
+      &:active {
+        box-shadow: none;
+        background-color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .formatic-repeatable {
+    .formatic-field-container.two-col-first,
+    .formatic-field-container.two-col-second {
+      width: 100% !important;
+    }
+  }
+}

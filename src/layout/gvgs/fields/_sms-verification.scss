@@ -1,0 +1,66 @@
+.formatic-sms-verification {
+  @import "./label";
+
+  .formatic-sms-verification__phone-container {
+    .formatic-error-message {
+      margin-top: 18px;
+    }
+
+    .formatic-sms-verification__phone {
+      @include formatic-text();
+    }
+
+    .formatic-sms-verification__send-button,
+    .formatic-sms-verification__change-phone-button {
+      @include formatic-button();
+    }
+  }
+
+  .formatic-sms-verification__phone-field-container,
+  .formatic-sms-verification__sent-success {
+    flex-basis: calc(75% - 20px);
+    margin-right: 20px;
+  }
+
+  .formatic-sms-verification__sent-success {
+    display: flex;
+    align-items: center;
+  }
+
+  .formatic-sms-verification__send-sms-container,
+  .formatic-sms-verification__change-phone-container {
+    flex-basis: 25%;
+  }
+
+  .formatic-sms-verification__sent-container {
+    .formatic-sms-verification__code-input {
+      flex-basis: calc(75% - 20px);
+      margin-right: 20px;
+      @include formatic-text();
+    }
+
+    .formatic-sms-verification__code-button {
+      flex-basis: 25%;
+    }
+
+    .formatic-sms-verification__verify-button {
+      @include formatic-button();
+
+      &:disabled {
+        color: #53575a;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .formatic-sms-verification {
+    .formatic-sms-verification__phone-container {
+      .formatic-sms-verification__send-sms-container,
+      .formatic-sms-verification__change-phone-container {
+        margin-top: 0;
+      }
+    }
+  }
+}

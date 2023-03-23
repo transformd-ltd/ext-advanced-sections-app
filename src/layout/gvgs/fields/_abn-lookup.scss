@@ -1,0 +1,20 @@
+.formatic-abn-lookup__container {
+  .formatic-text__input {
+    @include formatic-text();
+  }
+
+  .formatic-search__button {
+    @include formatic-button();
+    min-width: 150px;
+    margin-right: 0;
+  }
+
+  .formatic-search-input {
+    position: relative;
+  }
+
+  .formatic-error-message {
+    position: absolute;
+    bottom: -25px;
+  }
+}

@@ -1,0 +1,52 @@
+.formatic-radio-list {
+  .formatic-radio-list__radio-item-container {
+    + .formatic-radio-list__radio-item-container {
+      margin-top: 0;
+    }
+
+    .formatic-radio-list__radio-item-checkmark {
+      border: $border;
+      margin-right: 8px;
+      margin-top: 3px;
+      height: 18px;
+      width: 18px;
+    }
+
+    .formatic-radio-list__radio-item-checkmark--checked {
+      background-color: $primary-color;
+      width: 10px;
+      height: 10px;
+    }
+
+    label {
+      align-items: flex-start;
+    }
+  }
+
+  .formatic-radio-list__radio-item {
+    &:checked + .formatic-radio-list__radio-item-checkmark {
+      border-color: $primary-color;
+    }
+
+    &:focus + .formatic-radio-list__radio-item-checkmark {
+      box-shadow: none;
+
+      .formatic-radio-list__radio-item-checkmark--checked {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .formatic-radio-list {
+    .formatic-radio-list__items-container {
+      flex-direction: column;
+    }
+
+    .formatic-radio-list__radio-item-container {
+      width: auto !important;
+    }
+  }
+}

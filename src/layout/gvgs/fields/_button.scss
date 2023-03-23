@@ -1,0 +1,69 @@
+@mixin formatic-button() {
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 42px;
+  height: auto;
+  color: #4f4f4f;
+  border: 2px solid $border-color;
+  background-color: transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 2px 10px;
+  justify-content: center;
+
+  &:hover,
+
+  &:focus {
+    box-shadow: none;
+    background-color: transparent;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    border-radius: 0px;
+    text-decoration: none;
+  }
+
+  &:disabled {
+    color: #53575a;
+    opacity: 0.8;
+  }
+}
+
+.formatic-button {
+  @include formatic-button();
+}
+
+.formatic-button-list {
+  .formatic-button-list__button-item-container .formatic-button-list__button {
+    @include formatic-button();
+    padding: 2px 20px;
+
+    &:hover,
+    &.formatic-button-list__button--selected {
+      background-color: transparent;
+      border: 2px solid $primary-color;
+      color: $primary-color;
+    }
+
+    &.formatic-button-list__button--selected {
+      padding-left: 10px;
+      padding-right: 30px;
+
+      &::after {
+        right: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .formatic-button-list {
+    .formatic-button-list__button-item-container {
+      margin-right: 0;
+
+      .formatic-button-list__button {
+        width: 100%;
+      }
+    }
+  }
+}

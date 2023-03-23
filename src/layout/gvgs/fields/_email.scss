@@ -1,0 +1,7 @@
+.formatic-email {
+  @import "./label";
+
+  .formatic-text__input {
+    @include formatic-text();
+  }
+}

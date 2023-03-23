@@ -1,0 +1,7 @@
+.formatic-bsb {
+  .formatic-bsb__auto-complete-input,
+  .formatic-bsb__bank,
+  .formatic-bsb__branch {
+    @include formatic-text();
+  }
+}
