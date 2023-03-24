@@ -1,13 +1,14 @@
 {
   "name": "@transformd-ltd/ext-form-apps",
   "private": true,
-  "version": "0.7.0",
+  "version": "0.9.2",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "npx eslint ./src --ext .js,jsx",
-    "package": "./scripts/build-package.sh"
+    "package": "./scripts/build-package.sh",
+    "sass": "sass src/layout/gvgs/index.scss src/layout/gvgs/index.css"
   },
   "dependencies": {
     "@blueprintjs/core": "^4.5.1",
@@ -19,7 +20,7 @@
     "@transformd-ltd/electronic-verification": "^0.1.5",
     "@transformd-ltd/profile-lookup": "^0.1.13",
     "@transformd-ltd/sandbox-bridge": "^0.0.2",
-    "@transformd-ltd/sdk": "1.5.3",
+    "@transformd-ltd/sdk": "1.6.1",
     "@transformd-ltd/theme-fermi": "^1.0.69",
     "@transformd-ltd/theme-transformd": "^0.1.16",
     "@transformd-ltd/user-lookup": "^0.1.3",

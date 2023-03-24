@@ -2,7 +2,7 @@
 @import "../../../../node_modules/@transformd-ltd/theme-transformd/src/abstracts/_variables.scss";
 @import "../../../../node_modules/@transformd-ltd/theme-transformd/src/components/_progress-bar.scss";
 
-.formatic--transformd .formatic-progress-bar {
+.formatic .formatic-progress-bar {
   background-color: $background-color;
 
   .formatic-progress-bar__stage--complete::after {
@@ -43,11 +43,11 @@
 }
 
 @media (max-width: 576px) {
-  .formatic--transformd .formatic-field-container.three-col-offset-2 {
+  .formatic .formatic-field-container.three-col-offset-2 {
     width: 100%;
   }
 
-  .formatic--transformd .formatic-progress-bar {
+  .formatic .formatic-progress-bar {
     .formatic-progress-bar__container {
       .formatic-progress-bar__block {
         .formatic-progress-bar__label-block {

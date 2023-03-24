@@ -1,5 +1,5 @@
-/* @import "../node_modules/@transformd-ltd/theme-fermi/dist/formatic.css"; */
-@import "layout/gvgs/style.css";
+@import "../node_modules/@transformd-ltd/theme-fermi/dist/formatic.css";
+@import "layout/gvgs/index.css";
 
 @tailwind base;
 @tailwind components;
