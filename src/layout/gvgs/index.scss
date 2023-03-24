@@ -7,7 +7,11 @@ $border-radius: 0px;
 $font-family: Oswald;
 $font-size: 16px;
 
-.formatic{
+body {
+  background-color: $background-color !important;
+}
+
+.formatic {
   font-family: $font-family;
   font-size: $font-size;
 

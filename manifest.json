@@ -1,7 +1,7 @@
 {
 	"id": "com.transformd.gvgsleaveos02",
 	"manifest_version": 1,
-	"version": "0.9.22",
+	"version": "0.9.24",
 	"name": "Leave Request Approval Task",
 	"icon": "icon.svg",
 	"environment": [
