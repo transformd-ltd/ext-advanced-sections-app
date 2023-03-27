@@ -1,7 +1,7 @@
 {
 	"id": "com.transformd.gvgsleaveos02",
 	"manifest_version": 1,
-	"version": "0.9.24",
+	"version": "0.9.26",
 	"name": "Leave Request Approval Task",
 	"icon": "icon.svg",
 	"environment": [
@@ -73,6 +73,13 @@
 			"key": "UPLOAD_SECTION_FIELD_IDS",
 			"label": "Upload Field IDs:",
 			"description":"Any files uploaded to the fields listed here will appear in the uploads section. Use a comma-seperated list - fieldId1, fieldId2",
+			"type": "string",
+			"is_required": false
+		},
+		{
+			"key": "TASK_ACTION_BUTTONS",
+			"label": "Task action buttons:",
+			"description": "JSON array of objects containing data for the task action buttons. Keys; 'buttonFieldId', 'outcome', 'redirectPage'. Please note that redirectPage accepts both page ID's (to navigate to a from page) and full external URLs ",
 			"type": "string",
 			"is_required": false
 		}
