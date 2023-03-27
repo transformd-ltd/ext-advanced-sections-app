@@ -1,6 +1,6 @@
 function NotFound() {
   return (
-    <div>404</div>
+    <div>Task is loading, please refresh this page.</div>
   );
 }
 

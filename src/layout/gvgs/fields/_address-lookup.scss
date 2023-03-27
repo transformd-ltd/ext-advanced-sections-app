@@ -1,0 +1,8 @@
+.formatic-address-lookup {
+  @import "./label";
+  @import "./autocomplete";
+
+  .formatic-address-lookup__back {
+    @include formatic-button();
+  }
+}

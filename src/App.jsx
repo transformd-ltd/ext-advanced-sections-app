@@ -6,7 +6,7 @@ import {
   Route, useParams,
 } from "react-router-dom";
 import { view } from "@transformd-ltd/sandbox-bridge";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 import NotFound from "./components/NotFound";
 import "./App.css";
 import HomePage from "./pages/Homepage";
@@ -18,14 +18,14 @@ function TestPage() {
     <div>
       <pre>{JSON.stringify(params, null, 2)}</pre>
     </div>
-  )
+  );
 }
 
 function App(props) {
   const { history } = props;
 
   function handleComplete() {
-    view.callBridge('reload');
+    view.callBridge("reload");
   }
 
   return (

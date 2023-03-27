@@ -1,0 +1,50 @@
+.formatic-ev-component {
+  @include formatic-checkbox();
+
+  .ev-skip-template-info-icon:after {
+    color: $primary-color;
+  }
+
+  .formatic-checkbox-list__checkbox-item-container {
+    flex-direction: row;
+  }
+
+  .formatic-electronic-verification__button-container {
+    .formatic-electronic-verification__button {
+      @include formatic-button();
+    }
+  }
+
+  .formatic-electronic-verification__button-icon-container {
+    &:hover {
+      border-color: $primary-color;
+      background-color: transparentize($primary-color, 0.7);
+    }
+  }
+
+  .formatic-electronic-verification__button-container-source--selected
+    .formatic-electronic-verification__button-icon-container {
+    border-color: $primary-color;
+  }
+
+  .ev-introduction-template-content-list-number {
+    border-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      color: $primary-color;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .ev-introduction-template-document-image {
+    background-color: $primary-color;
+
+    p {
+      filter: invert(100%);
+    }
+  }
+}

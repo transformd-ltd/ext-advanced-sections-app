@@ -1,0 +1,44 @@
+@import "../../../../node_modules/@transformd-ltd/theme-transformd/src/abstracts/_variables.scss";
+
+.formatic-rich-text-area {
+  p {
+    margin: $paragraph-margin;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  ul li {
+    list-style-type: disc;
+  }
+
+  ol li {
+    list-style-type: decimal;
+    list-style-position: inside;
+  }
+
+  ol li,
+  ul li {
+    margin: $rich-text-li-margin;
+  }
+
+  ol li:last-of-type,
+  ul li:last-of-type {
+    margin-bottom: 0;
+  }
+
+  a {
+    cursor: pointer;
+    color: $primary-color;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: $rich-text-headings-margin;
+  }
+}

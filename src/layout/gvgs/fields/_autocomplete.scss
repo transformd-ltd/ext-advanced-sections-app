@@ -1,0 +1,5 @@
+.formatic-auto-complete {
+  .formatic-address-lookup__auto-complete-input {
+    @include formatic-text();
+  }
+}

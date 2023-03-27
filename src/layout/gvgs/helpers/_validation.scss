@@ -1,0 +1,204 @@
+.formatic-profile-lookup__container
+  .formatic-search-container
+  .formatic-search-input.formatic-field-valid
+  .formatic-text__input-container:after,
+.formatic-abn-lookup__container
+  .formatic-search-container
+  .formatic-search-input.formatic-field-valid
+  .formatic-text__input-container:after,
+.formatic-field-container .formatic-field-valid .formatic-dropdown__select::after,
+.formatic-field-container .formatic-field-valid.formatic-text::after,
+.formatic-field-container .formatic-field-valid.formatic-password::after,
+.formatic-field-container .formatic-field-valid.formatic-bsb__bank-container::after,
+.formatic-field-container .formatic-field-valid.formatic-bsb__branch-container::after,
+.formatic-field-container .formatic-field-valid.formatic-email::after,
+.formatic-field-container .formatic-field-valid.formatic-textarea::after,
+.formatic-field-container .formatic-field-valid .formatic-auto-complete::after,
+.formatic-field-container .formatic-field-valid .formatic-checkbox-list__items-container::after,
+.formatic-field-container .formatic-field-valid .formatic-date-picker__date-picker > div::after,
+.formatic-field-container .formatic-field-valid .formatic-radio-list__items-container::after,
+.formatic-field-container .formatic-field-valid .formatic-text::after,
+.formatic-field-container .formatic-field-valid .formatic-sms-verification__phone-field-container::after,
+.formatic-field-container .formatic-field-valid .formatic-email-verification__email-field-container::after,
+.formatic-field-valid.formatic-electronic-verification__manual-verification-field-container::after,
+.formatic-field-container .formatic-field-valid .formatic-date-picker__normal::after,
+.formatic-field-container .formatic-field-valid .formatic-date-picker__normal::after {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: white;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.formatic-abn-lookup__container .formatic-search-container .formatic-search-input.formatic-field-valid .formatic-text__input-container:after,
+.formatic-profile-lookup__container .formatic-search-container .formatic-search-input.formatic-field-valid .formatic-text__input-container:after,
+.formatic-field-container .formatic-field-valid .formatic-dropdown__select::after,
+.formatic-field-container .formatic-field-valid.formatic-text::after,
+.formatic-field-container .formatic-field-valid.formatic-password::after,
+// .formatic-field-container .formatic-field-valid.formatic-bsb__bank-container::after,
+.formatic-field-container .formatic-field-valid.formatic-bsb__branch-container::after,
+.formatic-field-container .formatic-field-valid.formatic-email::after,
+// .formatic-field-container .formatic-field-valid.formatic-textarea::after,
+.formatic-field-container .formatic-field-valid .formatic-auto-complete::after,
+// .formatic-field-container .formatic-field-valid .formatic-checkbox-list__items-container::after,
+.formatic-field-container .formatic-field-valid .formatic-date-picker__date-picker > div::after,
+// .formatic-field-container .formatic-field-valid .formatic-radio-list__items-container::after,
+.formatic-field-container .formatic-field-valid .formatic-text::after,
+.formatic-field-container .formatic-field-valid .formatic-sms-verification__phone-field-container::after,
+.formatic-field-container .formatic-field-valid .formatic-email-verification__email-field-container::after,
+.formatic-field-container .formatic-field-valid .formatic-date-picker__normal::after,
+.formatic-field-container .formatic-field-valid .formatic-date-picker__normal::after {
+  bottom: 25px;
+  right: -10px;
+}
+
+.formatic-ev-component
+  .formatic-field-valid.formatic-electronic-verification__manual-verification-field-container::after {
+  right: 10.5px !important;
+  top: 58px !important;
+}
+
+.formatic-field-container .formatic-field-valid.formatic-textarea::after,
+.formatic-field-container .formatic-field-valid .formatic-checkbox-list__items-container::after,
+.formatic-field-container .formatic-field-valid .formatic-radio-list__items-container::after {
+  right: -10px;
+}
+.formatic-field-container .formatic-field-valid .formatic-email-verification__email-field-container::after {
+  right: -10px;
+  top: 12px;
+}
+
+.formatic-field-container .formatic-field-valid.formatic-bsb__branch-container::after,
+.formatic-field-container .formatic-field-valid .formatic-sms-verification__phone-field-container::after,
+.formatic-field-container .formatic-field-valid .formatic-auto-complete::after,
+.formatic-field-container .formatic-field-valid .formatic-dropdown__select::after {
+  bottom: 12px !important;
+  top: auto;
+}
+
+.formatic-field-container .formatic-field-valid .formatic-date-picker__date-picker > div::after {
+  top: 12px;
+}
+
+.formatic-profile-lookup__container
+  .formatic-search-container
+  .formatic-search-input.formatic-field-valid
+  .formatic-text__input-container:after,
+.formatic-abn-lookup__container
+  .formatic-search-container
+  .formatic-search-input.formatic-field-valid
+  .formatic-text__input-container:after {
+  top: 12px !important;
+}
+
+// NOT VALID
+.formatic-form .formatic-field-error .formatic-error-message {
+  line-height: 12px;
+  margin-top: 4px !important;
+}
+
+.formatic-profile-lookup__container
+  .formatic-search-container
+  .formatic-search-input.formatic-field-error
+  .formatic-text__input-container:after,
+.formatic-abn-lookup__container
+  .formatic-search-container
+  .formatic-search-input.formatic-field-error
+  .formatic-text__input-container:after,
+.formatic-field-container .formatic-field-error .formatic-dropdown__select::after,
+.formatic-field-container .formatic-field-error.formatic-text::after,
+.formatic-field-container .formatic-field-error.formatic-password::after,
+.formatic-field-container .formatic-field-error.formatic-bsb__bank-container::after,
+.formatic-field-container .formatic-field-error.formatic-bsb__branch-container::after,
+.formatic-field-container .formatic-field-error.formatic-email::after,
+.formatic-field-container .formatic-field-error.formatic-textarea::after,
+.formatic-field-container .formatic-field-error .formatic-auto-complete::after,
+.formatic-field-container .formatic-field-error .formatic-checkbox-list__items-container::after,
+.formatic-field-container .formatic-field-error .formatic-date-picker__date-picker > div::after,
+.formatic-field-container .formatic-field-error .formatic-radio-list__items-container::after,
+.formatic-field-container .formatic-field-error .formatic-text::after,
+.formatic-field-container .formatic-field-error .formatic-sms-verification__phone-field-container::after,
+.formatic-field-container .formatic-field-error .formatic-email-verification__email-field-container::after,
+.formatic-field-error.formatic-electronic-verification__manual-verification-field-container::after,
+.formatic-field-container .formatic-field-error .formatic-date-picker__normal::after,
+.formatic-field-container .formatic-field-error .formatic-date-picker__normal::after {
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.formatic-profile-lookup__container
+  .formatic-search-container
+  .formatic-search-input.formatic-field-error
+  .formatic-text__input-container:after,
+.formatic-abn-lookup__container .formatic-search-container .formatic-search-input.formatic-field-error .formatic-text__input-container:after,
+.formatic-field-container .formatic-field-error .formatic-dropdown__select::after,
+.formatic-field-container .formatic-field-error.formatic-text::after,
+.formatic-field-container .formatic-field-error.formatic-password::after,
+.formatic-field-container .formatic-field-error.formatic-bsb__bank-container::after,
+// .formatic-field-container .formatic-field-error.formatic-bsb__branch-container::after,
+.formatic-field-container .formatic-field-error.formatic-email::after,
+// .formatic-field-container .formatic-field-error.formatic-textarea::after,
+.formatic-field-container .formatic-field-error .formatic-auto-complete::after,
+// .formatic-field-container .formatic-field-error .formatic-checkbox-list__items-container::after,
+.formatic-field-container .formatic-field-error .formatic-date-picker__date-picker > div::after,
+// .formatic-field-container .formatic-field-error .formatic-radio-list__items-container::after,
+.formatic-field-container .formatic-field-error .formatic-text::after,
+.formatic-field-container .formatic-field-error .formatic-sms-verification__phone-field-container::after,
+// .formatic-field-container .formatic-field-error .formatic-email-verification__email-field-container::after,
+.formatic-field-container .formatic-field-error .formatic-date-picker__normal::after,
+.formatic-field-container .formatic-field-error .formatic-date-picker__normal::after {
+  bottom: 23px;
+  right: -10px;
+}
+
+.formatic-ev-component
+  .formatic-field-error.formatic-electronic-verification__manual-verification-field-container::after {
+  right: 10.5px !important;
+  top: 58px !important;
+}
+
+.formatic-field-container .formatic-field-error.formatic-textarea::after,
+.formatic-field-container .formatic-field-error .formatic-checkbox-list__items-container::after,
+.formatic-field-container .formatic-field-error .formatic-radio-list__items-container::after {
+  right: -10px;
+}
+
+.formatic-field-container .formatic-field-error .formatic-email-verification__email-field-container::after {
+  right: -10px;
+  top: 12px;
+}
+
+.formatic-field-container .formatic-field-error.formatic-bsb__branch-container::after,
+.formatic-field-container .formatic-field-error .formatic-sms-verification__phone-field-container::after,
+.formatic-field-container .formatic-field-error .formatic-auto-complete::after,
+.formatic-field-container .formatic-field-error .formatic-dropdown__select::after {
+  bottom: 16px !important;
+  top: auto;
+}
+
+.formatic-profile-lookup__container
+  .formatic-search-container
+  .formatic-search-input.formatic-field-error
+  .formatic-text__input-container:after,
+.formatic-abn-lookup__container
+  .formatic-search-container
+  .formatic-search-input.formatic-field-error
+  .formatic-text__input-container:after {
+  top: 12px !important;
+}
+
+.formatic-field-container .formatic-field-error .formatic-date-picker__date-picker > div::after {
+  top: 12px;
+}
+
+.formatic-field-container {
+  .formatic-file-upload {
+    .formatic-error-message {
+      position: relative;
+    }
+  }
+}

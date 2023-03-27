@@ -34,7 +34,7 @@ const API = {
     retrieve: (id) => client.get(`submissions/${id}`),
   },
   downloadFile: {
-    retrieve: (submissionId, uploadId) => client.get(`submissions/${submissionId}/files/uploads/${uploadId}`, {responseType: 'blob'}),
+    retrieve: (submissionId, uploadId) => client.get(`submissions/${submissionId}/files/uploads/${uploadId}`, {responseType: "blob"}),
   }
 };
 

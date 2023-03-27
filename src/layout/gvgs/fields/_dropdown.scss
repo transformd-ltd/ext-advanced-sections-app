@@ -1,0 +1,15 @@
+.formatic-dropdown {
+  @import "./label";
+
+  .formatic-dropdown__select {
+    border: $border;
+
+    &.ant-select-focused {
+      box-shadow: none;
+    }
+  }
+
+  .formatic-dropdown-native__select {
+    @include formatic-text();
+  }
+}

@@ -1,0 +1,29 @@
+.formatic-file-upload {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid $border-color;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 700px;
+
+  .formatic-label {
+    font-weight: bold;
+  }
+
+  .formatic-file-upload__upload {
+    & > span {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ant-upload-select {
+      align-self: flex-end;
+    }
+
+    .formatic-button {
+      @include formatic-button();
+      border-color: $primary-color;
+      color: $primary-color;
+    }
+  }
+}

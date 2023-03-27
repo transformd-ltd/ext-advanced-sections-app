@@ -1,0 +1,38 @@
+.formatic-email-verification {
+  .formatic-email-verification__email,
+  .formatic-email-verification__code-input {
+    @include formatic-text();
+  }
+
+  .formatic-email-verification__send-button,
+  .formatic-email-verification__change-email-button,
+  .formatic-email-verification__verify-button {
+    @include formatic-button();
+    width: 100%;
+  }
+
+  .formatic-email-verification__email-field-container,
+  .formatic-email-verification__sent-success,
+  .formatic-email-verification__code-input {
+    flex-basis: calc(75% - 20px);
+    margin-right: 20px;
+  }
+
+  .formatic-email-verification__send-email-container {
+    margin-bottom: 5px;
+  }
+
+  .formatic-email-verification__change-email-button {
+    margin-top: 0;
+  }
+
+  .formatic-email-verification__verify-button {
+    margin-right: 0 !important;
+  }
+
+  .formatic-email-verification__change-email-container,
+  .formatic-email-verification__send-email-container,
+  .formatic-email-verification__code-button {
+    flex-basis: 25%;
+  }
+}

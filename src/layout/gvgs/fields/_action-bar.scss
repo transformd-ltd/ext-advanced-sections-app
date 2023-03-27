@@ -1,0 +1,77 @@
+.formatic-action-bar-root {
+  .formatic__float-right {
+    margin-left: auto;
+  }
+
+  .formatic-button {
+    &.formatic-action-bar-root__back {
+      font-size: 18px;
+      line-height: 24px;
+      height: 50px;
+      border-color: $primary-color;
+      color: $primary-color;
+
+      &::before {
+        content: none;
+      }
+
+      &:hover {
+        background-color: $primary-color;
+        border: none;
+        color: white;
+      }
+    }
+
+    &.formatic-action-bar-root__next,
+    &.formatic-action-bar-root__submit {
+      border: none;
+      box-shadow: none;
+      font-size: 18px;
+      line-height: 24px;
+      height: 50px;
+      color: white;
+      background-color: $secondary-color;
+
+      &::after {
+        content: none;
+      }
+
+      &:hover {
+        background-color: $primary-color;
+        border: 2px solid $primary-color;
+      }
+    }
+  }
+}
+
+.formatic-button-root-container {
+  .formatic-button-root-message {
+    background-color: white;
+    border: $border;
+    border-radius: 0px;
+    padding: 5px 10px;
+  }
+
+  .formatic-button {
+    &.formatic-button-root {
+      background-color: transparent;
+      font-size: 18px;
+      line-height: 24px;
+      height: 50px;
+      right: 150px;
+      border-color: $primary-color;
+      color: $primary-color;
+
+      &::before {
+        content: none;
+      }
+
+      &:hover {
+        background-color: $primary-color;
+        border: 2px solid $primary-color !important;
+        border: none;
+        color: white;
+      }
+    }
+  }
+}

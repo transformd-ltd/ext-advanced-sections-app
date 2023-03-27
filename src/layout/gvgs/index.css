@@ -1,0 +1,1798 @@
+body {
+  background-color: #FFF !important;
+}
+
+.formatic {
+  font-family: Oswald;
+  font-size: 16px;
+}
+.formatic h1 {
+  color: #00205B;
+}
+.formatic .formatic-connectivity-component__container {
+  position: fixed;
+  top: 0;
+  background: #FFC72C;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  z-index: 123;
+  line-height: 35px;
+}
+.formatic .formatic-button {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 42px;
+  height: auto;
+  color: #4f4f4f;
+  border: 2px solid #FFC72C;
+  background-color: transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 2px 10px;
+  justify-content: center;
+}
+.formatic .formatic-button:hover, .formatic .formatic-button:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: #00205B;
+  border: 2px solid #00205B;
+  border-radius: 0px;
+  text-decoration: none;
+}
+.formatic .formatic-button:disabled {
+  color: #53575a;
+  opacity: 0.8;
+}
+.formatic .formatic-button-list .formatic-button-list__button-item-container .formatic-button-list__button {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 42px;
+  height: auto;
+  color: #4f4f4f;
+  border: 2px solid #FFC72C;
+  background-color: transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 2px 10px;
+  justify-content: center;
+  padding: 2px 20px;
+}
+.formatic .formatic-button-list .formatic-button-list__button-item-container .formatic-button-list__button:hover, .formatic .formatic-button-list .formatic-button-list__button-item-container .formatic-button-list__button:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: #00205B;
+  border: 2px solid #00205B;
+  border-radius: 0px;
+  text-decoration: none;
+}
+.formatic .formatic-button-list .formatic-button-list__button-item-container .formatic-button-list__button:disabled {
+  color: #53575a;
+  opacity: 0.8;
+}
+.formatic .formatic-button-list .formatic-button-list__button-item-container .formatic-button-list__button:hover, .formatic .formatic-button-list .formatic-button-list__button-item-container .formatic-button-list__button.formatic-button-list__button--selected {
+  background-color: transparent;
+  border: 2px solid #00205B;
+  color: #00205B;
+}
+.formatic .formatic-button-list .formatic-button-list__button-item-container .formatic-button-list__button.formatic-button-list__button--selected {
+  padding-left: 10px;
+  padding-right: 30px;
+}
+.formatic .formatic-button-list .formatic-button-list__button-item-container .formatic-button-list__button.formatic-button-list__button--selected::after {
+  right: 14px;
+}
+@media (max-width: 480px) {
+  .formatic .formatic-button-list .formatic-button-list__button-item-container {
+    margin-right: 0;
+  }
+  .formatic .formatic-button-list .formatic-button-list__button-item-container .formatic-button-list__button {
+    width: 100%;
+  }
+}
+.formatic .formatic-action-bar-root .formatic__float-right {
+  margin-left: auto;
+}
+.formatic .formatic-action-bar-root .formatic-button.formatic-action-bar-root__back {
+  font-size: 18px;
+  line-height: 24px;
+  height: 50px;
+  border-color: #00205B;
+  color: #00205B;
+}
+.formatic .formatic-action-bar-root .formatic-button.formatic-action-bar-root__back::before {
+  content: none;
+}
+.formatic .formatic-action-bar-root .formatic-button.formatic-action-bar-root__back:hover {
+  background-color: #00205B;
+  border: none;
+  color: white;
+}
+.formatic .formatic-action-bar-root .formatic-button.formatic-action-bar-root__next, .formatic .formatic-action-bar-root .formatic-button.formatic-action-bar-root__submit {
+  border: none;
+  box-shadow: none;
+  font-size: 18px;
+  line-height: 24px;
+  height: 50px;
+  color: white;
+  background-color: #FFC72C;
+}
+.formatic .formatic-action-bar-root .formatic-button.formatic-action-bar-root__next::after, .formatic .formatic-action-bar-root .formatic-button.formatic-action-bar-root__submit::after {
+  content: none;
+}
+.formatic .formatic-action-bar-root .formatic-button.formatic-action-bar-root__next:hover, .formatic .formatic-action-bar-root .formatic-button.formatic-action-bar-root__submit:hover {
+  background-color: #00205B;
+  border: 2px solid #00205B;
+}
+.formatic .formatic-button-root-container .formatic-button-root-message {
+  background-color: white;
+  border: 1px solid #FFC72C;
+  border-radius: 0px;
+  padding: 5px 10px;
+}
+.formatic .formatic-button-root-container .formatic-button.formatic-button-root {
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 24px;
+  height: 50px;
+  right: 150px;
+  border-color: #00205B;
+  color: #00205B;
+}
+.formatic .formatic-button-root-container .formatic-button.formatic-button-root::before {
+  content: none;
+}
+.formatic .formatic-button-root-container .formatic-button.formatic-button-root:hover {
+  background-color: #00205B;
+  border: 2px solid #00205B !important;
+  border: none;
+  color: white;
+}
+.formatic .formatic-field-container {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.formatic .formatic-field-container .formatic-text .formatic-label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.formatic .formatic-field-container .formatic-text .formatic-label .formatic-label__content,
+.formatic .formatic-field-container .formatic-text .formatic-label .formatic-label__required {
+  line-height: 20px;
+  display: inline;
+}
+.formatic .formatic-field-container .formatic-text .formatic-text__input {
+  border: 1px solid #FFC72C;
+  font-family: Oswald;
+  font-size: 16px;
+  height: 42px;
+  padding: 9px 12px;
+  background-color: white;
+  width: 100%;
+  border-radius: 0px;
+}
+.formatic .formatic-field-container .formatic-text .formatic-text__input:focus {
+  box-shadow: none;
+}
+.formatic .formatic-field-container .formatic-textarea .formatic-label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.formatic .formatic-field-container .formatic-textarea .formatic-label .formatic-label__content,
+.formatic .formatic-field-container .formatic-textarea .formatic-label .formatic-label__required {
+  line-height: 20px;
+  display: inline;
+}
+.formatic .formatic-field-container .formatic-textarea .formatic-textarea__textarea {
+  border: 1px solid #FFC72C;
+  font-family: Oswald;
+  font-size: 16px;
+  height: 42px;
+  padding: 9px 12px;
+  background-color: white;
+  width: 100%;
+  border-radius: 0px;
+  height: auto;
+}
+.formatic .formatic-field-container .formatic-textarea .formatic-textarea__textarea:focus {
+  box-shadow: none;
+}
+.formatic .formatic-field-container .formatic-dropdown .formatic-label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.formatic .formatic-field-container .formatic-dropdown .formatic-label .formatic-label__content,
+.formatic .formatic-field-container .formatic-dropdown .formatic-label .formatic-label__required {
+  line-height: 20px;
+  display: inline;
+}
+.formatic .formatic-field-container .formatic-dropdown .formatic-dropdown__select {
+  border: 1px solid #FFC72C;
+}
+.formatic .formatic-field-container .formatic-dropdown .formatic-dropdown__select.ant-select-focused {
+  box-shadow: none;
+}
+.formatic .formatic-field-container .formatic-dropdown .formatic-dropdown-native__select {
+  border: 1px solid #FFC72C;
+  font-family: Oswald;
+  font-size: 16px;
+  height: 42px;
+  padding: 9px 12px;
+  background-color: white;
+  width: 100%;
+  border-radius: 0px;
+}
+.formatic .formatic-field-container .formatic-dropdown .formatic-dropdown-native__select:focus {
+  box-shadow: none;
+}
+.formatic .formatic-field-container .formatic-radio-list .formatic-radio-list__radio-item-container + .formatic-radio-list__radio-item-container {
+  margin-top: 0;
+}
+.formatic .formatic-field-container .formatic-radio-list .formatic-radio-list__radio-item-container .formatic-radio-list__radio-item-checkmark {
+  border: 1px solid #FFC72C;
+  margin-right: 8px;
+  margin-top: 3px;
+  height: 18px;
+  width: 18px;
+}
+.formatic .formatic-field-container .formatic-radio-list .formatic-radio-list__radio-item-container .formatic-radio-list__radio-item-checkmark--checked {
+  background-color: #00205B;
+  width: 10px;
+  height: 10px;
+}
+.formatic .formatic-field-container .formatic-radio-list .formatic-radio-list__radio-item-container label {
+  align-items: flex-start;
+}
+.formatic .formatic-field-container .formatic-radio-list .formatic-radio-list__radio-item:checked + .formatic-radio-list__radio-item-checkmark {
+  border-color: #00205B;
+}
+.formatic .formatic-field-container .formatic-radio-list .formatic-radio-list__radio-item:focus + .formatic-radio-list__radio-item-checkmark {
+  box-shadow: none;
+}
+.formatic .formatic-field-container .formatic-radio-list .formatic-radio-list__radio-item:focus + .formatic-radio-list__radio-item-checkmark .formatic-radio-list__radio-item-checkmark--checked {
+  width: 10px;
+  height: 10px;
+}
+@media (max-width: 480px) {
+  .formatic .formatic-field-container .formatic-radio-list .formatic-radio-list__items-container {
+    flex-direction: column;
+  }
+  .formatic .formatic-field-container .formatic-radio-list .formatic-radio-list__radio-item-container {
+    width: auto !important;
+  }
+}
+.formatic .formatic-field-container .formatic-email .formatic-label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.formatic .formatic-field-container .formatic-email .formatic-label .formatic-label__content,
+.formatic .formatic-field-container .formatic-email .formatic-label .formatic-label__required {
+  line-height: 20px;
+  display: inline;
+}
+.formatic .formatic-field-container .formatic-email .formatic-text__input {
+  border: 1px solid #FFC72C;
+  font-family: Oswald;
+  font-size: 16px;
+  height: 42px;
+  padding: 9px 12px;
+  background-color: white;
+  width: 100%;
+  border-radius: 0px;
+}
+.formatic .formatic-field-container .formatic-email .formatic-text__input:focus {
+  box-shadow: none;
+}
+.formatic .formatic-field-container .formatic-sms-verification .formatic-label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.formatic .formatic-field-container .formatic-sms-verification .formatic-label .formatic-label__content,
+.formatic .formatic-field-container .formatic-sms-verification .formatic-label .formatic-label__required {
+  line-height: 20px;
+  display: inline;
+}
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__phone-container .formatic-error-message {
+  margin-top: 18px;
+}
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__phone-container .formatic-sms-verification__phone {
+  border: 1px solid #FFC72C;
+  font-family: Oswald;
+  font-size: 16px;
+  height: 42px;
+  padding: 9px 12px;
+  background-color: white;
+  width: 100%;
+  border-radius: 0px;
+}
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__phone-container .formatic-sms-verification__phone:focus {
+  box-shadow: none;
+}
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__phone-container .formatic-sms-verification__send-button,
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__phone-container .formatic-sms-verification__change-phone-button {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 42px;
+  height: auto;
+  color: #4f4f4f;
+  border: 2px solid #FFC72C;
+  background-color: transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 2px 10px;
+  justify-content: center;
+}
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__phone-container .formatic-sms-verification__send-button:hover, .formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__phone-container .formatic-sms-verification__send-button:focus,
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__phone-container .formatic-sms-verification__change-phone-button:hover,
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__phone-container .formatic-sms-verification__change-phone-button:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: #00205B;
+  border: 2px solid #00205B;
+  border-radius: 0px;
+  text-decoration: none;
+}
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__phone-container .formatic-sms-verification__send-button:disabled,
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__phone-container .formatic-sms-verification__change-phone-button:disabled {
+  color: #53575a;
+  opacity: 0.8;
+}
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__phone-field-container,
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__sent-success {
+  flex-basis: calc(75% - 20px);
+  margin-right: 20px;
+}
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__sent-success {
+  display: flex;
+  align-items: center;
+}
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__send-sms-container,
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__change-phone-container {
+  flex-basis: 25%;
+}
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__sent-container .formatic-sms-verification__code-input {
+  flex-basis: calc(75% - 20px);
+  margin-right: 20px;
+  border: 1px solid #FFC72C;
+  font-family: Oswald;
+  font-size: 16px;
+  height: 42px;
+  padding: 9px 12px;
+  background-color: white;
+  width: 100%;
+  border-radius: 0px;
+}
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__sent-container .formatic-sms-verification__code-input:focus {
+  box-shadow: none;
+}
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__sent-container .formatic-sms-verification__code-button {
+  flex-basis: 25%;
+}
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__sent-container .formatic-sms-verification__verify-button {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 42px;
+  height: auto;
+  color: #4f4f4f;
+  border: 2px solid #FFC72C;
+  background-color: transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 2px 10px;
+  justify-content: center;
+}
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__sent-container .formatic-sms-verification__verify-button:hover, .formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__sent-container .formatic-sms-verification__verify-button:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: #00205B;
+  border: 2px solid #00205B;
+  border-radius: 0px;
+  text-decoration: none;
+}
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__sent-container .formatic-sms-verification__verify-button:disabled {
+  color: #53575a;
+  opacity: 0.8;
+}
+.formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__sent-container .formatic-sms-verification__verify-button:disabled {
+  color: #53575a;
+  opacity: 0.8;
+}
+@media (max-width: 480px) {
+  .formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__phone-container .formatic-sms-verification__send-sms-container,
+  .formatic .formatic-field-container .formatic-sms-verification .formatic-sms-verification__phone-container .formatic-sms-verification__change-phone-container {
+    margin-top: 0;
+  }
+}
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__email,
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__code-input {
+  border: 1px solid #FFC72C;
+  font-family: Oswald;
+  font-size: 16px;
+  height: 42px;
+  padding: 9px 12px;
+  background-color: white;
+  width: 100%;
+  border-radius: 0px;
+}
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__email:focus,
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__code-input:focus {
+  box-shadow: none;
+}
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__send-button,
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__change-email-button,
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__verify-button {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 42px;
+  height: auto;
+  color: #4f4f4f;
+  border: 2px solid #FFC72C;
+  background-color: transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 2px 10px;
+  justify-content: center;
+  width: 100%;
+}
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__send-button:hover, .formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__send-button:focus,
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__change-email-button:hover,
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__change-email-button:focus,
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__verify-button:hover,
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__verify-button:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: #00205B;
+  border: 2px solid #00205B;
+  border-radius: 0px;
+  text-decoration: none;
+}
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__send-button:disabled,
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__change-email-button:disabled,
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__verify-button:disabled {
+  color: #53575a;
+  opacity: 0.8;
+}
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__email-field-container,
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__sent-success,
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__code-input {
+  flex-basis: calc(75% - 20px);
+  margin-right: 20px;
+}
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__send-email-container {
+  margin-bottom: 5px;
+}
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__change-email-button {
+  margin-top: 0;
+}
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__verify-button {
+  margin-right: 0 !important;
+}
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__change-email-container,
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__send-email-container,
+.formatic .formatic-field-container .formatic-email-verification .formatic-email-verification__code-button {
+  flex-basis: 25%;
+}
+.formatic .formatic-field-container .formatic-abn-lookup__container .formatic-text__input {
+  border: 1px solid #FFC72C;
+  font-family: Oswald;
+  font-size: 16px;
+  height: 42px;
+  padding: 9px 12px;
+  background-color: white;
+  width: 100%;
+  border-radius: 0px;
+}
+.formatic .formatic-field-container .formatic-abn-lookup__container .formatic-text__input:focus {
+  box-shadow: none;
+}
+.formatic .formatic-field-container .formatic-abn-lookup__container .formatic-search__button {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 42px;
+  height: auto;
+  color: #4f4f4f;
+  border: 2px solid #FFC72C;
+  background-color: transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 2px 10px;
+  justify-content: center;
+  min-width: 150px;
+  margin-right: 0;
+}
+.formatic .formatic-field-container .formatic-abn-lookup__container .formatic-search__button:hover, .formatic .formatic-field-container .formatic-abn-lookup__container .formatic-search__button:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: #00205B;
+  border: 2px solid #00205B;
+  border-radius: 0px;
+  text-decoration: none;
+}
+.formatic .formatic-field-container .formatic-abn-lookup__container .formatic-search__button:disabled {
+  color: #53575a;
+  opacity: 0.8;
+}
+.formatic .formatic-field-container .formatic-abn-lookup__container .formatic-search-input {
+  position: relative;
+}
+.formatic .formatic-field-container .formatic-abn-lookup__container .formatic-error-message {
+  position: absolute;
+  bottom: -25px;
+}
+.formatic .formatic-field-container .formatic-address-lookup .formatic-label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.formatic .formatic-field-container .formatic-address-lookup .formatic-label .formatic-label__content,
+.formatic .formatic-field-container .formatic-address-lookup .formatic-label .formatic-label__required {
+  line-height: 20px;
+  display: inline;
+}
+.formatic .formatic-field-container .formatic-address-lookup .formatic-auto-complete .formatic-address-lookup__auto-complete-input {
+  border: 1px solid #FFC72C;
+  font-family: Oswald;
+  font-size: 16px;
+  height: 42px;
+  padding: 9px 12px;
+  background-color: white;
+  width: 100%;
+  border-radius: 0px;
+}
+.formatic .formatic-field-container .formatic-address-lookup .formatic-auto-complete .formatic-address-lookup__auto-complete-input:focus {
+  box-shadow: none;
+}
+.formatic .formatic-field-container .formatic-address-lookup .formatic-address-lookup__back {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 42px;
+  height: auto;
+  color: #4f4f4f;
+  border: 2px solid #FFC72C;
+  background-color: transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 2px 10px;
+  justify-content: center;
+}
+.formatic .formatic-field-container .formatic-address-lookup .formatic-address-lookup__back:hover, .formatic .formatic-field-container .formatic-address-lookup .formatic-address-lookup__back:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: #00205B;
+  border: 2px solid #00205B;
+  border-radius: 0px;
+  text-decoration: none;
+}
+.formatic .formatic-field-container .formatic-address-lookup .formatic-address-lookup__back:disabled {
+  color: #53575a;
+  opacity: 0.8;
+}
+.formatic .formatic-field-container .formatic-profile-lookup__container .formatic-text__input {
+  border: 1px solid #FFC72C;
+  font-family: Oswald;
+  font-size: 16px;
+  height: 42px;
+  padding: 9px 12px;
+  background-color: white;
+  width: 100%;
+  border-radius: 0px;
+}
+.formatic .formatic-field-container .formatic-profile-lookup__container .formatic-text__input:focus {
+  box-shadow: none;
+}
+.formatic .formatic-field-container .formatic-profile-lookup__container .formatic-search__button {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 42px;
+  height: auto;
+  color: #4f4f4f;
+  border: 2px solid #FFC72C;
+  background-color: transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 2px 10px;
+  justify-content: center;
+  min-width: 150px;
+  margin-right: 0;
+}
+.formatic .formatic-field-container .formatic-profile-lookup__container .formatic-search__button:hover, .formatic .formatic-field-container .formatic-profile-lookup__container .formatic-search__button:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: #00205B;
+  border: 2px solid #00205B;
+  border-radius: 0px;
+  text-decoration: none;
+}
+.formatic .formatic-field-container .formatic-profile-lookup__container .formatic-search__button:disabled {
+  color: #53575a;
+  opacity: 0.8;
+}
+.formatic .formatic-field-container .formatic-profile-lookup__container .formatic-search-input {
+  display: flex;
+  position: relative;
+}
+.formatic .formatic-field-container .formatic-profile-lookup__container .formatic-text__input-container {
+  flex-grow: 1;
+  margin-right: 12px;
+}
+.formatic .formatic-field-container .formatic-profile-lookup__container .formatic-error-message {
+  position: absolute;
+  bottom: -25px;
+}
+.formatic .formatic-field-container .formatic-profile-lookup__container .formatic-search-result-item {
+  display: flex;
+  padding: 12px;
+  border: 1px solid #d3dce6;
+}
+.formatic .formatic-field-container .formatic-profile-lookup__container .formatic-search-result-item .formatic-search-result-item-detail {
+  padding: 0 10px;
+}
+.formatic .formatic-field-container .formatic-profile-lookup__container .formatic-search-result-item .formatic-search-result-item-detail h4 {
+  line-height: 20px;
+  font-weight: bold;
+}
+.formatic .formatic-field-container .formatic-date-picker .formatic-label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.formatic .formatic-field-container .formatic-date-picker .formatic-label .formatic-label__content,
+.formatic .formatic-field-container .formatic-date-picker .formatic-label .formatic-label__required {
+  line-height: 20px;
+  display: inline;
+}
+.formatic .formatic-field-container .formatic-date-picker input.formatic-date-picker__native-date,
+.formatic .formatic-field-container .formatic-date-picker input.formatic-date-picker__date-picker {
+  border: 1px solid #FFC72C;
+  font-family: Oswald;
+  font-size: 16px;
+  height: 42px;
+  padding: 9px 12px;
+  background-color: white;
+  width: 100%;
+  border-radius: 0px;
+  -webkit-appearance: none;
+}
+.formatic .formatic-field-container .formatic-date-picker input.formatic-date-picker__native-date:focus,
+.formatic .formatic-field-container .formatic-date-picker input.formatic-date-picker__date-picker:focus {
+  box-shadow: none;
+}
+.formatic .formatic-field-container .formatic-date-picker .formatic-date-picker-mode-calendar span.formatic-date-picker__date-picker {
+  border: none;
+  padding: 0;
+  height: auto;
+}
+.formatic .formatic-field-container .formatic-date-picker input.formatic-date-picker__native-date,
+.formatic .formatic-field-container .formatic-date-picker input.formatic-date-picker__date-picker {
+  border: 1px solid #FFC72C;
+  font-family: Oswald;
+  font-size: 16px;
+  height: 42px;
+  padding: 9px 12px;
+  background-color: white;
+  width: 100%;
+  border-radius: 0px;
+  -webkit-appearance: none;
+}
+.formatic .formatic-field-container .formatic-date-picker input.formatic-date-picker__native-date:focus,
+.formatic .formatic-field-container .formatic-date-picker input.formatic-date-picker__date-picker:focus {
+  box-shadow: none;
+}
+.formatic .formatic-field-container .formatic-date-picker.formatic-field-error input.formatic-date-picker__date-picker {
+  border: 1px solid #e2e4e5;
+}
+.formatic .formatic-field-container .formatic-date-picker.formatic-field-error .formatic-error-message {
+  margin-top: 6px !important;
+}
+.formatic .formatic-field-container .formatic-date-picker.formatic-field-valid input.formatic-date-picker__date-picker {
+  border: 1px solid #e2e4e5;
+}
+.formatic .formatic-field-container .formatic-date-picker .formatic-date-picker__normal::after {
+  content: none;
+}
+.formatic .formatic-field-container .formatic-date-picker .formatic-date-picker-mode-calendarInput {
+  position: relative;
+}
+.formatic .formatic-field-container .formatic-date-picker .formatic-date-picker-mode-calendarInput .ant-calendar-picker-input {
+  display: none !important;
+}
+.formatic .formatic-field-container .formatic-date-picker .formatic-date-picker-mode-calendarInput .formatic-date-picker__date-picker {
+  top: auto;
+  line-height: 38.54px;
+}
+.formatic .formatic-field-container .formatic-date-picker .formatic-date-picker-mode-calendarInput .formatic-date-picker__date-picker:focus {
+  box-shadow: none;
+}
+.formatic .formatic-field-container .formatic-date-picker .formatic-date-picker-mode-calendarInput input.formatic-date-picker__date-picker {
+  border: 1px solid #e2e4e5;
+}
+.formatic .formatic-field-container .formatic-date-picker .formatic-date-picker__date-picker {
+  position: inherit;
+  background-color: red;
+}
+.formatic .formatic-field-container .formatic-date-picker .ant-calendar-picker-input {
+  display: block !important;
+  cursor: pointer;
+  border: 1px solid #FFC72C;
+  font-family: Oswald;
+  font-size: 16px;
+  height: 42px;
+  padding: 9px 12px;
+  background-color: white;
+  width: 100%;
+  border-radius: 0px;
+}
+.formatic .formatic-field-container .formatic-date-picker .ant-calendar-picker-input:focus {
+  box-shadow: none;
+}
+.formatic .formatic-field-container h4.formatic-heading {
+  line-height: 15px;
+}
+.formatic .formatic-field-container h1.formatic-heading {
+  line-height: 30px;
+}
+.formatic .formatic-field-container h1.formatic-heading,
+.formatic .formatic-field-container h2.formatic-heading,
+.formatic .formatic-field-container h3.formatic-heading,
+.formatic .formatic-field-container h4.formatic-heading,
+.formatic .formatic-field-container h5.formatic-heading {
+  color: #00205B;
+}
+.formatic .formatic-field-container .formatic-repeatable .formatic-field-container .formatic-text::after {
+  right: 1.5px;
+}
+.formatic .formatic-field-container .formatic-repeatable .formatic-field-container .formatic-file-upload {
+  border: none;
+  max-width: 100%;
+}
+.formatic .formatic-field-container .formatic-repeatable .formatic-repeatable__actions button {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 42px;
+  height: auto;
+  color: #4f4f4f;
+  border: 2px solid #FFC72C;
+  background-color: transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 2px 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+.formatic .formatic-field-container .formatic-repeatable .formatic-repeatable__actions button:hover, .formatic .formatic-field-container .formatic-repeatable .formatic-repeatable__actions button:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: #00205B;
+  border: 2px solid #00205B;
+  border-radius: 0px;
+  text-decoration: none;
+}
+.formatic .formatic-field-container .formatic-repeatable .formatic-repeatable__actions button:disabled {
+  color: #53575a;
+  opacity: 0.8;
+}
+.formatic .formatic-field-container .formatic-repeatable .formatic-repeatable__item-remove-button-container button {
+  color: #00205B;
+}
+.formatic .formatic-field-container .formatic-repeatable .formatic-repeatable__item-remove-button-container button:hover {
+  color: #FFC72C;
+}
+.formatic .formatic-field-container .formatic-repeatable .formatic-repeatable__item-remove-button-container button:focus, .formatic .formatic-field-container .formatic-repeatable .formatic-repeatable__item-remove-button-container button:active {
+  box-shadow: none;
+  background-color: white;
+  text-decoration: none;
+}
+@media (max-width: 480px) {
+  .formatic .formatic-field-container .formatic-repeatable .formatic-field-container.two-col-first,
+  .formatic .formatic-field-container .formatic-repeatable .formatic-field-container.two-col-second {
+    width: 100% !important;
+  }
+}
+.formatic .formatic-field-container .formatic-review-table .formatic-review-table-item .formatic-review-table-item-advanced__row-container-checksum,
+.formatic .formatic-field-container .formatic-review-table .formatic-review-table-item .formatic-review-table-item-advanced__row-container-code,
+.formatic .formatic-field-container .formatic-review-table .formatic-review-table-item .formatic-review-table-item-advanced__row-container-smsSentTo,
+.formatic .formatic-field-container .formatic-review-table .formatic-review-table-item .formatic-review-table-item-advanced__row-container-status,
+.formatic .formatic-field-container .formatic-review-table .formatic-review-table-item .formatic-review-table-item-advanced__row-container-verifiedPhone,
+.formatic .formatic-field-container .formatic-review-table .formatic-review-table-item .formatic-review-table-item-advanced__row-container-version,
+.formatic .formatic-field-container .formatic-review-table .formatic-review-table-item .formatic-review-table-item-advanced__row-container-field_id,
+.formatic .formatic-field-container .formatic-review-table .formatic-review-table-item .formatic-review-table-item-advanced__row-container-extension,
+.formatic .formatic-field-container .formatic-review-table .formatic-review-table-item .formatic-review-table-item-advanced__row-container-size,
+.formatic .formatic-field-container .formatic-review-table .formatic-review-table-item .formatic-review-table-item-advanced__row-container-upload_id,
+.formatic .formatic-field-container .formatic-review-table .formatic-review-table-item .formatic-review-table-item-advanced__row-container-uid,
+.formatic .formatic-field-container .formatic-review-table .formatic-review-table-item .formatic-review-table-item-advanced__row-container-status {
+  display: none;
+}
+.formatic .formatic-field-container .formatic-review-table .formatic-review-table-section-heading {
+  background-color: #00205B;
+}
+.formatic .formatic-field-container .formatic-review-table .formatic-review-table-section__label {
+  background-color: #00205B;
+}
+.formatic .formatic-field-container .formatic-review-table .formatic-review-table-section__edit-container {
+  font-weight: bold;
+  border-radius: 0;
+}
+.formatic .formatic-field-container .formatic-review-table .formatic-review-table-section__edit-container span {
+  text-decoration: none;
+  margin-left: 5px;
+}
+.formatic .formatic-field-container .formatic-review-table .formatic-review-table-section__edit-container:hover {
+  background-color: #FFC72C;
+}
+@media (max-width: 480px) {
+  .formatic .formatic-field-container .formatic-review-table .formatic-review-table-item {
+    flex-direction: column;
+  }
+  .formatic .formatic-field-container .formatic-review-table .formatic-review-table-item:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  .formatic .formatic-field-container .formatic-review-table .formatic-review-table-item:nth-child(odd) .formatic-review-table-item__label,
+  .formatic .formatic-field-container .formatic-review-table .formatic-review-table-item:nth-child(odd) .formatic-review-table-item__value,
+  .formatic .formatic-field-container .formatic-review-table .formatic-review-table-item:nth-child(odd) .formatic-review-table-item-advanced {
+    background-color: white;
+  }
+  .formatic .formatic-field-container .formatic-review-table .formatic-review-table-item .formatic-review-table-item__label,
+  .formatic .formatic-field-container .formatic-review-table .formatic-review-table-item .formatic-review-table-item__value,
+  .formatic .formatic-field-container .formatic-review-table .formatic-review-table-item .formatic-review-table-item-advanced {
+    width: 100%;
+    border: none;
+    display: flex;
+  }
+  .formatic .formatic-field-container .formatic-review-table .formatic-review-table-item .formatic-review-table-item__label {
+    align-items: center;
+    font-weight: bold;
+  }
+}
+.formatic .formatic-field-container .formatic-file-upload {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #FFC72C;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 700px;
+}
+.formatic .formatic-field-container .formatic-file-upload .formatic-label {
+  font-weight: bold;
+}
+.formatic .formatic-field-container .formatic-file-upload .formatic-file-upload__upload > span {
+  display: flex;
+  flex-direction: column;
+}
+.formatic .formatic-field-container .formatic-file-upload .formatic-file-upload__upload .ant-upload-select {
+  align-self: flex-end;
+}
+.formatic .formatic-field-container .formatic-file-upload .formatic-file-upload__upload .formatic-button {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 42px;
+  height: auto;
+  color: #4f4f4f;
+  border: 2px solid #FFC72C;
+  background-color: transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 2px 10px;
+  justify-content: center;
+  border-color: #00205B;
+  color: #00205B;
+}
+.formatic .formatic-field-container .formatic-file-upload .formatic-file-upload__upload .formatic-button:hover, .formatic .formatic-field-container .formatic-file-upload .formatic-file-upload__upload .formatic-button:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: #00205B;
+  border: 2px solid #00205B;
+  border-radius: 0px;
+  text-decoration: none;
+}
+.formatic .formatic-field-container .formatic-file-upload .formatic-file-upload__upload .formatic-button:disabled {
+  color: #53575a;
+  opacity: 0.8;
+}
+.formatic .formatic-field-container .formatic-rich-text-area p {
+  margin: 0 0 1.25rem 0;
+}
+.formatic .formatic-field-container .formatic-rich-text-area p:last-child {
+  margin-bottom: 0;
+}
+.formatic .formatic-field-container .formatic-rich-text-area ul li {
+  list-style-type: disc;
+}
+.formatic .formatic-field-container .formatic-rich-text-area ol li {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+.formatic .formatic-field-container .formatic-rich-text-area ol li,
+.formatic .formatic-field-container .formatic-rich-text-area ul li {
+  margin: 0 0 0.3rem 4rem;
+}
+.formatic .formatic-field-container .formatic-rich-text-area ol li:last-of-type,
+.formatic .formatic-field-container .formatic-rich-text-area ul li:last-of-type {
+  margin-bottom: 0;
+}
+.formatic .formatic-field-container .formatic-rich-text-area a {
+  cursor: pointer;
+  color: #00205B;
+}
+.formatic .formatic-field-container .formatic-rich-text-area h1,
+.formatic .formatic-field-container .formatic-rich-text-area h2,
+.formatic .formatic-field-container .formatic-rich-text-area h3,
+.formatic .formatic-field-container .formatic-rich-text-area h4,
+.formatic .formatic-field-container .formatic-rich-text-area h5,
+.formatic .formatic-field-container .formatic-rich-text-area h6 {
+  margin: 0 0 1rem 0;
+}
+.formatic .formatic-field-container .formatic-digital-signature .formatic-digital-signature__canvas {
+  border: 1px solid #FFC72C;
+  border-radius: 4px;
+}
+.formatic .formatic-field-container .formatic-digital-signature .formatic-digital-signature__footer {
+  display: flex;
+  margin-top: 1rem;
+}
+.formatic .formatic-field-container .formatic-digital-signature .formatic-digital-signature__button--undo,
+.formatic .formatic-field-container .formatic-digital-signature .formatic-digital-signature__button--reset {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 42px;
+  height: auto;
+  color: #4f4f4f;
+  border: 2px solid #FFC72C;
+  background-color: transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 2px 10px;
+  justify-content: center;
+}
+.formatic .formatic-field-container .formatic-digital-signature .formatic-digital-signature__button--undo:hover, .formatic .formatic-field-container .formatic-digital-signature .formatic-digital-signature__button--undo:focus,
+.formatic .formatic-field-container .formatic-digital-signature .formatic-digital-signature__button--reset:hover,
+.formatic .formatic-field-container .formatic-digital-signature .formatic-digital-signature__button--reset:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: #00205B;
+  border: 2px solid #00205B;
+  border-radius: 0px;
+  text-decoration: none;
+}
+.formatic .formatic-field-container .formatic-digital-signature .formatic-digital-signature__button--undo:disabled,
+.formatic .formatic-field-container .formatic-digital-signature .formatic-digital-signature__button--reset:disabled {
+  color: #53575a;
+  opacity: 0.8;
+}
+.formatic .formatic-field-container .formatic-digital-signature .formatic-digital-signature__button--reset {
+  margin-left: 16px;
+}
+.formatic .formatic-field-container .formatic-action-button .formatic-button {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 42px;
+  height: auto;
+  color: #4f4f4f;
+  border: 2px solid #FFC72C;
+  background-color: transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 2px 10px;
+  justify-content: center;
+}
+.formatic .formatic-field-container .formatic-action-button .formatic-button:hover, .formatic .formatic-field-container .formatic-action-button .formatic-button:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: #00205B;
+  border: 2px solid #00205B;
+  border-radius: 0px;
+  text-decoration: none;
+}
+.formatic .formatic-field-container .formatic-action-button .formatic-button:disabled {
+  color: #53575a;
+  opacity: 0.8;
+}
+.formatic .formatic-field-container.formatic-action-back .formatic-action-button .formatic-button {
+  font-size: 18px;
+  line-height: 24px;
+  height: 50px;
+  border-color: #00205B;
+  color: #00205B;
+}
+.formatic .formatic-field-container.formatic-action-back .formatic-action-button .formatic-button::before {
+  content: none;
+}
+.formatic .formatic-field-container.formatic-action-back .formatic-action-button .formatic-button:hover {
+  background-color: #00205B;
+  border: none;
+  color: white;
+}
+.formatic .formatic-field-container .formatic-bsb .formatic-bsb__auto-complete-input,
+.formatic .formatic-field-container .formatic-bsb .formatic-bsb__bank,
+.formatic .formatic-field-container .formatic-bsb .formatic-bsb__branch {
+  border: 1px solid #FFC72C;
+  font-family: Oswald;
+  font-size: 16px;
+  height: 42px;
+  padding: 9px 12px;
+  background-color: white;
+  width: 100%;
+  border-radius: 0px;
+}
+.formatic .formatic-field-container .formatic-bsb .formatic-bsb__auto-complete-input:focus,
+.formatic .formatic-field-container .formatic-bsb .formatic-bsb__bank:focus,
+.formatic .formatic-field-container .formatic-bsb .formatic-bsb__branch:focus {
+  box-shadow: none;
+}
+.formatic .formatic-field-container .formatic-net-promoter-score .formatic-button {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 42px;
+  height: auto;
+  color: #4f4f4f;
+  border: 2px solid #FFC72C;
+  background-color: transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 2px 10px;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  padding: 0 8px 0 8px;
+  border: 1px solid #f8b600;
+}
+.formatic .formatic-field-container .formatic-net-promoter-score .formatic-button:hover, .formatic .formatic-field-container .formatic-net-promoter-score .formatic-button:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: #00205B;
+  border: 2px solid #00205B;
+  border-radius: 0px;
+  text-decoration: none;
+}
+.formatic .formatic-field-container .formatic-net-promoter-score .formatic-button:disabled {
+  color: #53575a;
+  opacity: 0.8;
+}
+.formatic .formatic-field-container .formatic-net-promoter-score .formatic-net-promoter-score__button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.formatic .formatic-field-container .formatic-net-promoter-score .formatic-net-promoter-score__description-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px 0 8px;
+}
+.formatic .formatic-field-container .formatic-net-promoter-score .formatic-net-promoter-score__negative-description {
+  text-align: left;
+}
+.formatic .formatic-field-container .formatic-net-promoter-score .formatic-net-promoter-score__positive-description {
+  text-align: right;
+}
+.formatic .formatic-field-container .formatic-with-help-text__container {
+  position: absolute;
+  right: -12px;
+  top: 10px;
+}
+.formatic .formatic-field-container .formatic-with-help-text__container .formatic-with-help-text__question-mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #00205B;
+  font-size: 14px;
+  line-height: 14px;
+  width: 20px;
+  height: 20px;
+}
+.formatic .formatic-field-container .formatic-checkbox-list .formatic-checkbox-list__checkbox-item-container {
+  min-height: 44px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.formatic .formatic-field-container .formatic-checkbox-list .formatic-checkbox-list__checkbox-item-container .formatic-checkbox-list__checkbox-item-label {
+  user-select: none;
+}
+.formatic .formatic-field-container .formatic-checkbox-list .formatic-checkbox-list__checkbox-item-container .formatic-checkbox-list__checkbox-item-label input:focus + .formatic-checkbox-list__checkbox-item-checkmark {
+  box-shadow: none;
+}
+.formatic .formatic-field-container .formatic-checkbox-list .formatic-checkbox-list__checkbox-item-container .formatic-checkbox-list__checkbox-item-label input:checked + .formatic-checkbox-list__checkbox-item-checkmark {
+  background-color: #00205B;
+  border-color: #00205B;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.formatic .formatic-field-container .formatic-checkbox-list .formatic-checkbox-list__checkbox-item-checkmark {
+  background-color: #FFF;
+  border: 2px solid #bdbdbd;
+}
+.formatic .formatic-field-container .formatic-checkbox-list .formatic-checkbox-list__checkbox-item-checkmark .formatic-checkbox-list__checkbox-item-checkmark--checked {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+}
+.formatic .formatic-field-container .formatic-checkbox-list .formatic-checkbox-list__checkbox-item-checkmark .formatic-checkbox-list__checkbox-item-checkmark--checked i {
+  color: white;
+  width: 11px;
+  line-height: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: -3px;
+}
+@media (max-width: 480px) {
+  .formatic .formatic-field-container .formatic-checkbox-list .formatic-checkbox-list__items-container {
+    flex-direction: column;
+  }
+  .formatic .formatic-field-container .formatic-checkbox-list .formatic-checkbox-list__checkbox-item-container {
+    width: auto !important;
+  }
+}
+.formatic .formatic-field-container.formatic-field-border {
+  border: 1px solid #FFC72C;
+  border-radius: 8px;
+  padding: 45px 50px;
+  margin: 10px 0;
+  background: #FFF;
+}
+.formatic .formatic-field-container.formatic-field-border ul li {
+  margin: 0 0 0.3rem 2rem;
+}
+.formatic .formatic-field-container.formatic-dots ul {
+  list-style: inherit;
+  padding-left: 18px;
+}
+.formatic .formatic-field-container.textarea-scroll {
+  overflow-y: auto;
+  height: 400px;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  padding: 15px;
+}
+.formatic .formatic-field-container.textarea-table table {
+  border: 1px solid #e2e4e5;
+}
+.formatic .formatic-field-container.textarea-table tr:not(:last-child) {
+  border-bottom: 1px solid #e2e4e5;
+}
+.formatic .formatic-field-container.textarea-table th:not(:last-child) {
+  border-right: 1px solid #e2e4e5;
+}
+.formatic .formatic-field-container.textarea-table th {
+  padding: 5px;
+}
+.formatic .formatic-field-container.formatic-input-symbol-dollar .formatic-text .formatic-text__input,
+.formatic .formatic-field-container.formatic-input-symbol-dollar .formatic-email .formatic-text__input, .formatic .formatic-field-container.formatic-input-symbol-phone .formatic-text .formatic-text__input,
+.formatic .formatic-field-container.formatic-input-symbol-phone .formatic-email .formatic-text__input, .formatic .formatic-field-container.formatic-input-symbol-email .formatic-text .formatic-text__input,
+.formatic .formatic-field-container.formatic-input-symbol-email .formatic-email .formatic-text__input, .formatic .formatic-field-container.formatic-input-symbol-dob .formatic-text .formatic-text__input,
+.formatic .formatic-field-container.formatic-input-symbol-dob .formatic-email .formatic-text__input, .formatic .formatic-field-container.formatic-input-symbol-percentage .formatic-text .formatic-text__input,
+.formatic .formatic-field-container.formatic-input-symbol-percentage .formatic-email .formatic-text__input {
+  padding-left: 47px;
+}
+.formatic .formatic-field-container.formatic-input-symbol-dollar .formatic-text::before,
+.formatic .formatic-field-container.formatic-input-symbol-dollar .formatic-email::before, .formatic .formatic-field-container.formatic-input-symbol-phone .formatic-text::before,
+.formatic .formatic-field-container.formatic-input-symbol-phone .formatic-email::before, .formatic .formatic-field-container.formatic-input-symbol-email .formatic-text::before,
+.formatic .formatic-field-container.formatic-input-symbol-email .formatic-email::before, .formatic .formatic-field-container.formatic-input-symbol-dob .formatic-text::before,
+.formatic .formatic-field-container.formatic-input-symbol-dob .formatic-email::before, .formatic .formatic-field-container.formatic-input-symbol-percentage .formatic-text::before,
+.formatic .formatic-field-container.formatic-input-symbol-percentage .formatic-email::before {
+  position: absolute;
+  bottom: 15px;
+  left: 1px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  width: 42px;
+  height: 43px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(43, 64, 199, 0.08);
+  color: #00205B;
+  border-right: 1px solid #FFC72C;
+  font-size: 22px;
+}
+.formatic .formatic-field-container.formatic-input-symbol-dollar .formatic-sms-verification .formatic-sms-verification__phone, .formatic .formatic-field-container.formatic-input-symbol-phone .formatic-sms-verification .formatic-sms-verification__phone, .formatic .formatic-field-container.formatic-input-symbol-email .formatic-sms-verification .formatic-sms-verification__phone, .formatic .formatic-field-container.formatic-input-symbol-dob .formatic-sms-verification .formatic-sms-verification__phone, .formatic .formatic-field-container.formatic-input-symbol-percentage .formatic-sms-verification .formatic-sms-verification__phone {
+  padding-left: 47px;
+}
+.formatic .formatic-field-container.formatic-input-symbol-dollar .formatic-sms-verification .formatic-sms-verification__phone-field-container::before, .formatic .formatic-field-container.formatic-input-symbol-phone .formatic-sms-verification .formatic-sms-verification__phone-field-container::before, .formatic .formatic-field-container.formatic-input-symbol-email .formatic-sms-verification .formatic-sms-verification__phone-field-container::before, .formatic .formatic-field-container.formatic-input-symbol-dob .formatic-sms-verification .formatic-sms-verification__phone-field-container::before, .formatic .formatic-field-container.formatic-input-symbol-percentage .formatic-sms-verification .formatic-sms-verification__phone-field-container::before {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  width: 42px;
+  height: 43px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(43, 64, 199, 0.08);
+  color: #00205B;
+  border-right: 1px solid #FFC72C;
+  font-size: 22px;
+}
+.formatic .formatic-field-container .formatic-repeatable .formatic-field-container.two-col-first, .formatic .formatic-field-container .formatic-repeatable .formatic-field-container.two-col-second {
+  width: 49.25%;
+}
+.formatic .formatic-field-container .formatic-repeatable .formatic-field-container.formatic-input-symbol-dollar .formatic-text::before, .formatic .formatic-field-container .formatic-repeatable .formatic-field-container.formatic-input-symbol-percentage .formatic-text::before, .formatic .formatic-field-container .formatic-repeatable .formatic-field-container.formatic-input-symbol-phone .formatic-text::before, .formatic .formatic-field-container .formatic-repeatable .formatic-field-container.formatic-input-symbol-email .formatic-text::before {
+  left: auto;
+}
+.formatic .formatic-field-container.formatic-input-symbol-dollar .formatic-text::before,
+.formatic .formatic-field-container.formatic-input-symbol-dollar .formatic-email::before,
+.formatic .formatic-field-container.formatic-input-symbol-dollar .formatic-sms-verification__phone-field-container::before {
+  content: "$";
+}
+.formatic .formatic-field-container.formatic-input-symbol-phone .formatic-text::before,
+.formatic .formatic-field-container.formatic-input-symbol-phone .formatic-email::before,
+.formatic .formatic-field-container.formatic-input-symbol-phone .formatic-sms-verification__phone-field-container::before {
+  content: url('data:image/svg+xml; utf8, <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.31381 18.4628C7.11692 18.5998 6.70182 18.8067 6.55502 18.8779C6.4125 19.5157 5.84448 19.9796 5.17877 19.9796L2.73172 19.9797C1.41934 19.9797 0.355466 18.9158 0.355469 17.6034L0.355541 2.42884C0.355544 1.12416 1.40746 0.0634937 2.7121 0.0526957L9.06879 7.2517e-05C9.07861 5.19031e-06 9.07862 1.38614e-05 9.08845 0C10.4008 -5.94057e-06 11.4647 1.06388 11.4647 2.37624L11.4648 17.6035C11.4648 18.9159 10.4009 19.9797 9.08853 19.9797L7.28417 19.9796C7.06544 19.9796 6.88814 19.8022 6.88815 19.5835C6.88816 19.3648 7.06549 19.1875 7.28421 19.1875L9.08857 19.1876C9.96346 19.1876 10.6727 18.4784 10.6728 17.6034L10.6726 2.37624C10.6726 1.50133 9.96336 0.792075 9.08845 0.792079C9.0819 0.792089 9.0819 0.792084 9.07535 0.792128L2.71866 0.844751C1.84891 0.851949 1.14762 1.55907 1.14762 2.42886L1.14755 17.6034C1.14755 18.4783 1.8568 19.1876 2.73171 19.1876L5.17876 19.1875C5.49113 19.1875 5.75443 18.9545 5.79247 18.6445C5.81468 18.4635 5.91484 18.3434 6.06036 18.2456C6.11947 18.2059 6.68685 17.9341 6.86142 17.8126C6.94396 17.7552 7.01916 17.6935 7.08778 17.6259L7.13067 17.5837C7.66152 17.0608 7.66846 16.2058 7.14617 15.6743C7.14232 15.6704 7.14232 15.6704 7.13846 15.6666L7.12839 15.6565C6.59093 15.1184 5.71974 15.1184 5.18228 15.6565C4.64172 16.1977 4.63771 17.0741 5.17329 17.6202C5.32644 17.7764 5.32398 18.0271 5.16782 18.1803C5.01165 18.3334 4.76092 18.331 4.60777 18.1748C3.76813 17.3186 3.77442 15.9452 4.62187 15.0967C5.46873 14.2489 6.84194 14.2489 7.6888 15.0967L7.69887 15.1068C7.70501 15.113 7.705 15.1129 7.71111 15.1191C8.53977 15.9624 8.52876 17.3183 7.68651 18.1479L7.64362 18.1902C7.54182 18.2905 7.43201 18.3805 7.31381 18.4628Z" fill="%232b40c7"/></svg>');
+  padding-top: 5px;
+}
+.formatic .formatic-field-container.formatic-input-symbol-dob .formatic-text::before,
+.formatic .formatic-field-container.formatic-input-symbol-dob .formatic-email::before,
+.formatic .formatic-field-container.formatic-input-symbol-dob .formatic-sms-verification__phone-field-container::before {
+  content: url('data:image/svg+xml; utf8, <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.4478 1.34328H13.9701V0.402985C13.9701 0.18806 13.7821 0 13.5672 0C13.3522 0 13.1642 0.18806 13.1642 0.402985V1.34328H4.83582V0.402985C4.83582 0.18806 4.64776 0 4.43284 0C4.21791 0 4.02985 0.18806 4.02985 0.402985V1.34328H2.55224C1.15522 1.34328 0 2.49851 0 3.89552V14.1045C0 15.5015 1.15522 16.6567 2.55224 16.6567H15.4478C16.8448 16.6567 18 15.5015 18 14.1045V3.89552C18 2.47164 16.8448 1.34328 15.4478 1.34328ZM2.55224 2.14925H4.02985V4.16418C4.02985 4.3791 4.21791 4.56716 4.43284 4.56716C4.64776 4.56716 4.83582 4.3791 4.83582 4.16418V2.14925H13.1642V4.16418C13.1642 4.3791 13.3522 4.56716 13.5672 4.56716C13.7821 4.56716 13.9701 4.3791 13.9701 4.16418V2.14925H15.4478C16.4149 2.14925 17.194 2.92836 17.194 3.89552V6.68955H0.80597V3.89552C0.80597 2.92836 1.58507 2.14925 2.55224 2.14925ZM15.4478 15.8507H2.55224C1.58507 15.8507 0.80597 15.0716 0.80597 14.1045V7.49552H17.194V14.1045C17.194 15.0716 16.4149 15.8507 15.4478 15.8507Z" fill="%232b40c7"/></svg>');
+  padding-top: 5px;
+}
+.formatic .formatic-field-container.formatic-input-symbol-email .formatic-text::before,
+.formatic .formatic-field-container.formatic-input-symbol-email .formatic-email::before,
+.formatic .formatic-field-container.formatic-input-symbol-email .formatic-sms-verification__phone-field-container::before {
+  content: "@";
+}
+.formatic .formatic-field-container.formatic-input-symbol-percentage .formatic-text::before,
+.formatic .formatic-field-container.formatic-input-symbol-percentage .formatic-email::before,
+.formatic .formatic-field-container.formatic-input-symbol-percentage .formatic-sms-verification__phone-field-container::before {
+  content: "%";
+}
+.formatic .formatic-field-container.two-col-list .formatic-radio-list .formatic-radio-list__items-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+  margin-bottom: -5px;
+}
+.formatic .formatic-field-container.two-col-list .formatic-radio-list .formatic-radio-list__radio-item-container {
+  width: 50%;
+  padding: 5px;
+}
+.formatic .formatic-field-container.three-col-list .formatic-radio-list .formatic-radio-list__items-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+  margin-bottom: -5px;
+}
+.formatic .formatic-field-container.three-col-list .formatic-radio-list .formatic-radio-list__radio-item-container {
+  width: 33.33%;
+  padding: 5px;
+}
+.formatic .formatic-field-container.four-col-list .formatic-radio-list .formatic-radio-list__items-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+  margin-bottom: -5px;
+}
+.formatic .formatic-field-container.four-col-list .formatic-radio-list .formatic-radio-list__radio-item-container {
+  width: 25%;
+  padding: 5px;
+}
+.formatic .formatic-section-container.formatic-section-border {
+  border: 1px solid #FFC72C;
+  border-radius: 8px;
+  padding: 45px 50px;
+  margin: 10px 0;
+  background: #FFF;
+}
+.formatic .formatic-section-container.formatic-section-border ul {
+  list-style: inherit;
+  padding-left: 18px;
+}
+.formatic .formatic-ev-component .formatic-checkbox-list__checkbox-item-container {
+  min-height: 44px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.formatic .formatic-ev-component .formatic-checkbox-list__checkbox-item-container .formatic-checkbox-list__checkbox-item-label {
+  user-select: none;
+}
+.formatic .formatic-ev-component .formatic-checkbox-list__checkbox-item-container .formatic-checkbox-list__checkbox-item-label input:focus + .formatic-checkbox-list__checkbox-item-checkmark {
+  box-shadow: none;
+}
+.formatic .formatic-ev-component .formatic-checkbox-list__checkbox-item-container .formatic-checkbox-list__checkbox-item-label input:checked + .formatic-checkbox-list__checkbox-item-checkmark {
+  background-color: #00205B;
+  border-color: #00205B;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.formatic .formatic-ev-component .formatic-checkbox-list__checkbox-item-checkmark {
+  background-color: #FFF;
+  border: 2px solid #bdbdbd;
+}
+.formatic .formatic-ev-component .formatic-checkbox-list__checkbox-item-checkmark .formatic-checkbox-list__checkbox-item-checkmark--checked {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+}
+.formatic .formatic-ev-component .formatic-checkbox-list__checkbox-item-checkmark .formatic-checkbox-list__checkbox-item-checkmark--checked i {
+  color: white;
+  width: 11px;
+  line-height: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: -3px;
+}
+.formatic .formatic-ev-component .ev-skip-template-info-icon:after {
+  color: #00205B;
+}
+.formatic .formatic-ev-component .formatic-checkbox-list__checkbox-item-container {
+  flex-direction: row;
+}
+.formatic .formatic-ev-component .formatic-electronic-verification__button-container .formatic-electronic-verification__button {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 42px;
+  height: auto;
+  color: #4f4f4f;
+  border: 2px solid #FFC72C;
+  background-color: transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 2px 10px;
+  justify-content: center;
+}
+.formatic .formatic-ev-component .formatic-electronic-verification__button-container .formatic-electronic-verification__button:hover, .formatic .formatic-ev-component .formatic-electronic-verification__button-container .formatic-electronic-verification__button:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: #00205B;
+  border: 2px solid #00205B;
+  border-radius: 0px;
+  text-decoration: none;
+}
+.formatic .formatic-ev-component .formatic-electronic-verification__button-container .formatic-electronic-verification__button:disabled {
+  color: #53575a;
+  opacity: 0.8;
+}
+.formatic .formatic-ev-component .formatic-electronic-verification__button-icon-container:hover {
+  border-color: #00205B;
+  background-color: rgba(0, 32, 91, 0.3);
+}
+.formatic .formatic-ev-component .formatic-electronic-verification__button-container-source--selected .formatic-electronic-verification__button-icon-container {
+  border-color: #00205B;
+}
+.formatic .formatic-ev-component .ev-introduction-template-content-list-number {
+  border-color: #00205B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formatic .formatic-ev-component .ev-introduction-template-content-list-number p {
+  color: #00205B;
+  padding: 0;
+  margin: 0;
+}
+.formatic .formatic-ev-component .ev-introduction-template-document-image {
+  background-color: #00205B;
+}
+.formatic .formatic-ev-component .ev-introduction-template-document-image p {
+  filter: invert(100%);
+}
+.formatic .formatic-profile-lookup__container .formatic-search-container .formatic-search-input.formatic-field-valid .formatic-text__input-container:after,
+.formatic .formatic-abn-lookup__container .formatic-search-container .formatic-search-input.formatic-field-valid .formatic-text__input-container:after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-dropdown__select::after,
+.formatic .formatic-field-container .formatic-field-valid.formatic-text::after,
+.formatic .formatic-field-container .formatic-field-valid.formatic-password::after,
+.formatic .formatic-field-container .formatic-field-valid.formatic-bsb__bank-container::after,
+.formatic .formatic-field-container .formatic-field-valid.formatic-bsb__branch-container::after,
+.formatic .formatic-field-container .formatic-field-valid.formatic-email::after,
+.formatic .formatic-field-container .formatic-field-valid.formatic-textarea::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-auto-complete::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-checkbox-list__items-container::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-date-picker__date-picker > div::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-radio-list__items-container::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-text::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-sms-verification__phone-field-container::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-email-verification__email-field-container::after,
+.formatic .formatic-field-valid.formatic-electronic-verification__manual-verification-field-container::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-date-picker__normal::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-date-picker__normal::after {
+  background-color: #00205B;
+  border-color: #00205B;
+  color: white;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  font-size: 16px;
+}
+.formatic .formatic-abn-lookup__container .formatic-search-container .formatic-search-input.formatic-field-valid .formatic-text__input-container:after,
+.formatic .formatic-profile-lookup__container .formatic-search-container .formatic-search-input.formatic-field-valid .formatic-text__input-container:after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-dropdown__select::after,
+.formatic .formatic-field-container .formatic-field-valid.formatic-text::after,
+.formatic .formatic-field-container .formatic-field-valid.formatic-password::after,
+.formatic .formatic-field-container .formatic-field-valid.formatic-bsb__branch-container::after,
+.formatic .formatic-field-container .formatic-field-valid.formatic-email::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-auto-complete::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-date-picker__date-picker > div::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-text::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-sms-verification__phone-field-container::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-email-verification__email-field-container::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-date-picker__normal::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-date-picker__normal::after {
+  bottom: 25px;
+  right: -10px;
+}
+.formatic .formatic-ev-component .formatic-field-valid.formatic-electronic-verification__manual-verification-field-container::after {
+  right: 10.5px !important;
+  top: 58px !important;
+}
+.formatic .formatic-field-container .formatic-field-valid.formatic-textarea::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-checkbox-list__items-container::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-radio-list__items-container::after {
+  right: -10px;
+}
+.formatic .formatic-field-container .formatic-field-valid .formatic-email-verification__email-field-container::after {
+  right: -10px;
+  top: 12px;
+}
+.formatic .formatic-field-container .formatic-field-valid.formatic-bsb__branch-container::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-sms-verification__phone-field-container::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-auto-complete::after,
+.formatic .formatic-field-container .formatic-field-valid .formatic-dropdown__select::after {
+  bottom: 12px !important;
+  top: auto;
+}
+.formatic .formatic-field-container .formatic-field-valid .formatic-date-picker__date-picker > div::after {
+  top: 12px;
+}
+.formatic .formatic-profile-lookup__container .formatic-search-container .formatic-search-input.formatic-field-valid .formatic-text__input-container:after,
+.formatic .formatic-abn-lookup__container .formatic-search-container .formatic-search-input.formatic-field-valid .formatic-text__input-container:after {
+  top: 12px !important;
+}
+.formatic .formatic-form .formatic-field-error .formatic-error-message {
+  line-height: 12px;
+  margin-top: 4px !important;
+}
+.formatic .formatic-profile-lookup__container .formatic-search-container .formatic-search-input.formatic-field-error .formatic-text__input-container:after,
+.formatic .formatic-abn-lookup__container .formatic-search-container .formatic-search-input.formatic-field-error .formatic-text__input-container:after,
+.formatic .formatic-field-container .formatic-field-error .formatic-dropdown__select::after,
+.formatic .formatic-field-container .formatic-field-error.formatic-text::after,
+.formatic .formatic-field-container .formatic-field-error.formatic-password::after,
+.formatic .formatic-field-container .formatic-field-error.formatic-bsb__bank-container::after,
+.formatic .formatic-field-container .formatic-field-error.formatic-bsb__branch-container::after,
+.formatic .formatic-field-container .formatic-field-error.formatic-email::after,
+.formatic .formatic-field-container .formatic-field-error.formatic-textarea::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-auto-complete::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-checkbox-list__items-container::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-date-picker__date-picker > div::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-radio-list__items-container::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-text::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-sms-verification__phone-field-container::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-email-verification__email-field-container::after,
+.formatic .formatic-field-error.formatic-electronic-verification__manual-verification-field-container::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-date-picker__normal::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-date-picker__normal::after {
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  font-size: 16px;
+}
+.formatic .formatic-profile-lookup__container .formatic-search-container .formatic-search-input.formatic-field-error .formatic-text__input-container:after,
+.formatic .formatic-abn-lookup__container .formatic-search-container .formatic-search-input.formatic-field-error .formatic-text__input-container:after,
+.formatic .formatic-field-container .formatic-field-error .formatic-dropdown__select::after,
+.formatic .formatic-field-container .formatic-field-error.formatic-text::after,
+.formatic .formatic-field-container .formatic-field-error.formatic-password::after,
+.formatic .formatic-field-container .formatic-field-error.formatic-bsb__bank-container::after,
+.formatic .formatic-field-container .formatic-field-error.formatic-email::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-auto-complete::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-date-picker__date-picker > div::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-text::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-sms-verification__phone-field-container::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-date-picker__normal::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-date-picker__normal::after {
+  bottom: 23px;
+  right: -10px;
+}
+.formatic .formatic-ev-component .formatic-field-error.formatic-electronic-verification__manual-verification-field-container::after {
+  right: 10.5px !important;
+  top: 58px !important;
+}
+.formatic .formatic-field-container .formatic-field-error.formatic-textarea::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-checkbox-list__items-container::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-radio-list__items-container::after {
+  right: -10px;
+}
+.formatic .formatic-field-container .formatic-field-error .formatic-email-verification__email-field-container::after {
+  right: -10px;
+  top: 12px;
+}
+.formatic .formatic-field-container .formatic-field-error.formatic-bsb__branch-container::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-sms-verification__phone-field-container::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-auto-complete::after,
+.formatic .formatic-field-container .formatic-field-error .formatic-dropdown__select::after {
+  bottom: 16px !important;
+  top: auto;
+}
+.formatic .formatic-profile-lookup__container .formatic-search-container .formatic-search-input.formatic-field-error .formatic-text__input-container:after,
+.formatic .formatic-abn-lookup__container .formatic-search-container .formatic-search-input.formatic-field-error .formatic-text__input-container:after {
+  top: 12px !important;
+}
+.formatic .formatic-field-container .formatic-field-error .formatic-date-picker__date-picker > div::after {
+  top: 12px;
+}
+.formatic .formatic-field-container .formatic-file-upload .formatic-error-message {
+  position: relative;
+}
+
+.formatic--transformd .formatic-progress-bar {
+  background: #fff;
+  margin: 0 0 3rem 0;
+  z-index: 11;
+}
+.formatic--transformd .formatic-progress-bar .formatic-progress-bar__container {
+  display: flex;
+}
+.formatic--transformd .formatic-progress-bar .formatic-progress-bar__block {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding-bottom: calc(0.625rem + 6px);
+  position: relative;
+}
+.formatic--transformd .formatic-progress-bar .formatic-progress-bar__block ~ .formatic-progress-bar__block {
+  margin-left: 0.625rem;
+}
+.formatic--transformd .formatic-progress-bar .formatic-progress-bar__stage {
+  background-color: #4c5057;
+  height: 6px;
+  width: 100%;
+}
+.formatic--transformd .formatic-progress-bar .formatic-progress-bar__stage--incomplete {
+  background-color: #c4cedc;
+}
+.formatic--transformd .formatic-progress-bar .formatic-progress-bar__stage--complete {
+  background-color: #4c5057;
+}
+.formatic--transformd .formatic-progress-bar .formatic-progress-bar__stage {
+  bottom: 0;
+  position: absolute;
+}
+.formatic--transformd .formatic-progress-bar .formatic-progress-bar__stage--selected ~ .formatic-progress-bar__label-block {
+  color: #4c5057;
+  font-weight: 700;
+}
+.formatic--transformd .formatic-progress-bar .formatic-progress-bar__stage--complete ~ .formatic-progress-bar__label-block {
+  color: #4c5057;
+  font-weight: 400;
+}
+.formatic--transformd .formatic-progress-bar .formatic-progress-bar__stage--incomplete ~ .formatic-progress-bar__label-block {
+  color: #c4cedc;
+  font-weight: 400;
+}
+
+.formatic--transformd .sticky-outer-wrapper {
+  margin: 0 0 3rem 0;
+}
+
+.formatic--transformd .sticky-outer-wrapper .formatic-progress-bar {
+  margin: 0;
+}
+
+.formatic--transformd .sticky-outer-wrapper.active .formatic-progress-bar {
+  margin: 0;
+  padding: 0 0 0.75rem 0;
+}
+
+.formatic--transformd .sticky-inner-wrapper {
+  z-index: 10 !important;
+}
+
+.formatic .formatic-progress-bar {
+  background-color: #FFF;
+}
+.formatic .formatic-progress-bar .formatic-progress-bar__stage--complete::after {
+  display: none;
+}
+.formatic .formatic-progress-bar .formatic-progress-bar__stage.formatic-progress-bar__stage--complete,
+.formatic .formatic-progress-bar .formatic-progress-bar__stage.formatic-progress-bar__stage--selected,
+.formatic .formatic-progress-bar .formatic-progress-bar__progress {
+  background-color: #00205B;
+}
+.formatic .formatic-progress-bar .formatic-label__content {
+  color: #00205B;
+}
+.formatic .formatic-progress-bar .formatic-progress-bar__line,
+.formatic .formatic-progress-bar .formatic-progress-bar__progress {
+  display: none;
+}
+.formatic .formatic-progress-bar .formatic-progress-bar__block .formatic-progress-bar__stage {
+  border-radius: 0;
+}
+.formatic .formatic-progress-bar .formatic-progress-bar__block.formatic-progress-bar__block--completion-block .formatic-progress-bar__label-block {
+  position: relative;
+  right: auto;
+}
+.formatic .formatic-progress-bar .formatic-progress-bar__block .formatic-label__content {
+  transform: none;
+}
+
+@media (max-width: 576px) {
+  .formatic .formatic-field-container.three-col-offset-2 {
+    width: 100%;
+  }
+  .formatic .formatic-progress-bar .formatic-progress-bar__container .formatic-progress-bar__block .formatic-progress-bar__label-block {
+    display: none;
+  }
+  .formatic .formatic-progress-bar .formatic-progress-bar__container .formatic-progress-bar__block--selected {
+    flex-grow: 4;
+  }
+  .formatic .formatic-progress-bar .formatic-progress-bar__container .formatic-progress-bar__block--selected .formatic-progress-bar__label-block {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .formatic-progress-bar {
+    display: block !important;
+  }
+}
+.formatic .formatic-rich-text-area__content .claim-container {
+  display: flex;
+  padding: 2rem;
+}
+.formatic .formatic-rich-text-area__content .claim-section-container {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+}
+.formatic .formatic-rich-text-area__content .claim-section-container:not(:first-child):not(:last-child) {
+  padding: 0 3rem;
+}
+.formatic .formatic-rich-text-area__content .claim-section__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formatic .formatic-rich-text-area__content .claim-section__body {
+  margin-top: 32px;
+  padding: 0 16px;
+}
+.formatic .formatic-rich-text-area__content .claim-arrow {
+  width: 100%;
+  height: 50px;
+  background: #282b48;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formatic .formatic-rich-text-area__content .claim-arrow:before, .formatic .formatic-rich-text-area__content .claim-arrow:after {
+  content: "";
+  position: absolute;
+}
+.formatic .formatic-rich-text-area__content .claim-arrow:after {
+  border-left: 25px solid #282b48;
+  border-right: 25px solid transparent;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  right: -50px;
+  top: 0px;
+  width: 0;
+  height: 0;
+  display: block;
+}
+.formatic .formatic-rich-text-area__content .claim-arrow:before {
+  border-left: 26px solid white;
+  border-right: 26px solid transparent;
+  border-top: 26px solid transparent;
+  border-bottom: 26px solid transparent;
+  left: 0px;
+  top: -1px;
+  width: 0;
+  height: 0;
+  display: block;
+}
+
+.formatic .formatic-hidden {
+  display: none !important;
+}
+
+.formatic-address-lookup__auto-complete-dropdown button {
+  font-size: 14px;
+  font-weight: bold;
+  height: 42px;
+  color: #4f4f4f;
+  border: 2px solid #FFC72C;
+  background-color: transparent;
+  border-radius: 100px;
+  box-shadow: none;
+}
+.formatic-address-lookup__auto-complete-dropdown button:hover, .formatic-address-lookup__auto-complete-dropdown button:focus {
+  box-shadow: none;
+  color: #00205B;
+  border-color: #00205B;
+  background-color: transparent;
+  border-radius: 100px;
+  text-decoration: none;
+}
+.formatic-address-lookup__auto-complete-dropdown button:disabled {
+  color: #53575a;
+  opacity: 0.8;
+}
+
+.formatic-date-picker__popup-calendar .ant-calendar-header .ant-calendar-century-select,
+.formatic-date-picker__popup-calendar .ant-calendar-header .ant-calendar-decade-select,
+.formatic-date-picker__popup-calendar .ant-calendar-header .ant-calendar-year-select,
+.formatic-date-picker__popup-calendar .ant-calendar-header .ant-calendar-month-select {
+  color: #00205B;
+}
+.formatic-date-picker__popup-calendar .ant-calendar-column-header .ant-calendar-column-header-inner {
+  background-color: #FFC72C;
+}
+.formatic-date-picker__popup-calendar.ant-calendar-picker-container .ant-calendar-today-btn {
+  background-color: #00205B;
+}
+.formatic-date-picker__popup-calendar.ant-calendar-picker-container .ant-calendar-today-btn:hover {
+  background-color: #FFC72C;
+}
+.formatic-date-picker__popup-calendar .ant-calendar-today .ant-calendar-date {
+  color: #FFC72C;
+  border-color: #FFC72C;
+}
+.formatic-date-picker__popup-calendar .ant-calendar-selected-date .ant-calendar-date {
+  background-color: #FFC72C;
+  border-color: #FFC72C;
+}
+.formatic-date-picker__popup-calendar :not(.ant-calendar-selected-date) > .ant-calendar-date:hover {
+  color: #FFC72C;
+  border-color: #FFC72C;
+}
+
+.formatic-ant-dropdown.ant-select-dropdown .ant-select-dropdown-menu-item-active {
+  background-color: #00205B;
+}
+
+.ant-tooltip {
+  display: none;
+}
+
+/* GVGS custom class for time fields. */
+.time-inline {
+  flex: 33%;
+  padding-inline: 0px 30px;
+  max-width: 150px;
+}
+
+.date-check-inline1 {
+  flex: auto;
+  padding-inline: 0px 5px;
+  max-width: 180px;
+}
+
+.date-check-inline2 {
+  flex: auto;
+  padding-inline: 0px 5px;
+  max-width: 250px;
+  min-width: 250px;
+}
+
+/*# sourceMappingURL=index.css.map */

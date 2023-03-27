@@ -1,0 +1,78 @@
+.formatic-date-picker {
+  @import "./label";
+
+  input.formatic-date-picker__native-date,
+  input.formatic-date-picker__date-picker {
+    @include formatic-text();
+    -webkit-appearance: none;
+  }
+
+  .formatic-date-picker-mode-calendar {
+    span.formatic-date-picker__date-picker {
+      border: none;
+      padding: 0;
+      height: auto;
+    }
+  }
+
+  input.formatic-date-picker__native-date,
+  input.formatic-date-picker__date-picker {
+    @include formatic-text();
+    -webkit-appearance: none;
+  }
+
+  &.formatic-field-error {
+    input.formatic-date-picker__date-picker {
+      border: 1px solid #e2e4e5;
+    }
+
+    .formatic-error-message {
+      margin-top: 6px !important;
+    }
+  }
+
+  &.formatic-field-valid {
+    input.formatic-date-picker__date-picker {
+      border: 1px solid #e2e4e5;
+    }
+  }
+
+  .formatic-date-picker__normal {
+    &::after {
+      content: none;
+    }
+  }
+
+  .formatic-date-picker-mode-calendarInput {
+    position: relative;
+
+    .ant-calendar-picker-input {
+      display: none !important;
+    }
+
+    .formatic-date-picker__date-picker {
+      top: auto;
+      line-height: 38.54px;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    input.formatic-date-picker__date-picker {
+      border: 1px solid #e2e4e5;
+    }
+  }
+
+  .formatic-date-picker__date-picker {
+    position: inherit;
+    background-color: red;
+  }
+
+  .ant-calendar-picker-input {
+    display: block !important;
+    cursor: pointer;
+
+    @include formatic-text();
+  }
+}
