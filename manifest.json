@@ -21,13 +21,6 @@
 			"is_required": true
 		},
 		{
-			"key": "BRANCH",
-			"label": "Branch",
-			"description": "Form Branch",
-			"type": "string",
-			"is_required": true
-		},
-		{
 			"key": "CHANNEL",
 			"label": "Channel",
 			"description": "Form Channel",

@@ -69,3 +69,16 @@ button.btn {
   justify-content: start !important;
   display: block;
 }
+.api-v3-outcome-message {
+  position: sticky;
+  bottom: 0;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+}
+.api-v3-outcome-message.error {
+  background-color: #ffcdcd;
+}
+.api-v3-outcome-message.success {
+  background-color: #c2f7b9;
+}
