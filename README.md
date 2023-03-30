@@ -18,7 +18,7 @@ The base styles come `theme-fermi`, but additional styles can be added by placin
 
 From this `index.scss` file you can import other SASS/SCSS files as you need.
 
-At this point you will need to have SASS globally installed on your system, as we as compiling the SASS manually ourselves, before using the output CSS file in the general app build process.
+At this point you will need to have [SASS globally installed on your system](https://sass-lang.com/install), as we as compiling the SASS manually ourselves, before using the output CSS file in the general app build process.
 
 The build process up to and including the creation of the `app.zip` (which gets uploaded to the hosted apps) can be achieved by running the following commands:
 
