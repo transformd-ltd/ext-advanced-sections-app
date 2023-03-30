@@ -7,7 +7,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "npx eslint ./src --ext .js,jsx",
-    "package": "./scripts/build-package.sh"
+    "package": "./scripts/build-package.sh",
+    "sass": "sass src/layout/index.scss src/layout/index.css",
+    "full": "yarn sass && yarn build && yarn package"
   },
   "dependencies": {
     "@blueprintjs/core": "^4.5.1",
