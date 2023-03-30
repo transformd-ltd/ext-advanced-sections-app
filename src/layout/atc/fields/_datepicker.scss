@@ -1,6 +1,7 @@
 .formatic-date-picker {
   @import "./label";
 
+
   input.formatic-date-picker__native-date,
   input.formatic-date-picker__date-picker {
     @include formatic-text();
@@ -66,7 +67,6 @@
 
   .formatic-date-picker__date-picker {
     position: inherit;
-    background-color: red;
   }
 
   .ant-calendar-picker-input {

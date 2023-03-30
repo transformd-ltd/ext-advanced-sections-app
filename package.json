@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "lint": "npx eslint ./src --ext .js,jsx",
     "package": "./scripts/build-package.sh",
-    "sass": "sass src/layout/gvgs/index.scss src/layout/gvgs/index.css"
+    "sass": "sass src/layout/atc/index.scss src/layout/atc/index.css"
   },
   "dependencies": {
     "@blueprintjs/core": "^4.5.1",

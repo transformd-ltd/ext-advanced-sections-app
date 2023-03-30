@@ -7,19 +7,18 @@
   color: #4f4f4f;
   border: 2px solid $border-color;
   background-color: transparent;
-  border-radius: 0px;
+  border-radius: 100px;
   box-shadow: none;
   padding: 2px 10px;
   justify-content: center;
 
   &:hover,
-
   &:focus {
     box-shadow: none;
     background-color: transparent;
     color: $primary-color;
     border: 2px solid $primary-color;
-    border-radius: 0px;
+    border-radius: 100px;
     text-decoration: none;
   }
 

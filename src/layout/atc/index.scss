@@ -1,15 +1,11 @@
-$primary-color: #00205B;
-$secondary-color: #FFC72C;
-$background-color: #FFF;
-$border-color: #FFC72C;
+$primary-color: #352bc7;
+$secondary-color: #db0a0a;
+$background-color: #f5f5f5;
+$border-color: #e2e4e5;
 $border: 1px solid $border-color;
-$border-radius: 0px;
-$font-family: Oswald;
+$border-radius: 4px;
+$font-family: Open Sans;
 $font-size: 16px;
-
-body {
-  background-color: $background-color !important;
-}
 
 .formatic {
   font-family: $font-family;
@@ -123,7 +119,7 @@ body {
   }
 
   .ant-calendar-column-header .ant-calendar-column-header-inner {
-    background-color: #FFC72C;
+    color: $primary-color;
   }
 
   &.ant-calendar-picker-container .ant-calendar-today-btn {
@@ -158,25 +154,17 @@ body {
   display: none;
 }
 
-/* GVGS custom class for time fields. */
-.time-inline {
-  flex:33%;
-  padding-inline: 0px 30px;  
-  max-width: 150px;
+.formatic-button.formatic-button-root ,
+.formatic-button.formatic-action-bar-root__back{
+  background-color: $primary-color !important;
+  color: #f5f5f5 !important;
 }
 
-.date-check-inline1 {
-  flex: auto;
-  
-  padding-inline: 0px 5px;  
-  max-width: 180px;
-  
-}
-
-.date-check-inline2 {
-  flex:auto;
-  
-  padding-inline: 0px 5px;  
-  max-width: 250px;
-  min-width: 250px;
+.formatic-button.formatic-action-bar-root__next,
+.formatic-button.formatic-action-bar-root__submit,
+.formatic-button.formatic-action-bar-root__back,
+.formatic-button.formatic-button-root {
+  &:hover {    
+    font-size: 130% !important; 
+  }
 }

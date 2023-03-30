@@ -30,7 +30,7 @@
       line-height: 24px;
       height: 50px;
       color: white;
-      background-color: $secondary-color;
+      background-color: $primary-color;
 
       &::after {
         content: none;
@@ -48,7 +48,7 @@
   .formatic-button-root-message {
     background-color: white;
     border: $border;
-    border-radius: 0px;
+    border-radius: 4px;
     padding: 5px 10px;
   }
 
