@@ -1785,4 +1785,8 @@
   font-size: 130% !important;
 }
 
+.action-button_submit .formatic-button:hover {
+  border: 2px solid #e2e4e5 !important;
+}
+
 /*# sourceMappingURL=index.css.map */
