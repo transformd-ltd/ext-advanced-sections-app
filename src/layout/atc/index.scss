@@ -155,16 +155,17 @@ $font-size: 16px;
 }
 
 .formatic-button.formatic-button-root ,
+.action-button_submit,
 .formatic-button.formatic-action-bar-root__back{
   background-color: $primary-color !important;
-  color: #f5f5f5 !important;
+  color: #F5F5F5 !important;
 }
-
 .formatic-button.formatic-action-bar-root__next,
 .formatic-button.formatic-action-bar-root__submit,
 .formatic-button.formatic-action-bar-root__back,
+.action-button_submit,
 .formatic-button.formatic-button-root {
-  &:hover {    
-    font-size: 130% !important; 
+  &:hover {
+    font-size: 130% !important;
   }
 }
