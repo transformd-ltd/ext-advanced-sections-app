@@ -589,10 +589,10 @@
   dependencies:
     antd "3.4.0"
 
-"@transformd-ltd/user-lookup@^0.1.3":
-  version "0.1.3"
-  resolved "https://npm.pkg.github.com/download/@transformd-ltd/user-lookup/0.1.3/fd1ad898b5760399dc39607ff8c2d99a0029e4da#fd1ad898b5760399dc39607ff8c2d99a0029e4da"
-  integrity sha512-l6ZG7YH+Cj2wthnDw9WI/ylR39Syo6Vd1YNR13NsE6mUprq9aaBvWPG8j9e03LuC/6OIcEbYpdQM4PjmHfGu4w==
+"@transformd-ltd/user-lookup@^1.0.2":
+  version "1.0.2"
+  resolved "https://npm.pkg.github.com/download/@transformd-ltd/user-lookup/1.0.2/12314aa3379a0bcb941e75a1bd067b202765ff86#12314aa3379a0bcb941e75a1bd067b202765ff86"
+  integrity sha512-bIZsLBz2RJUQqd9WTh/xqZwxqwk8qOkUm3bqnudrmQWzgzmcCjKZ0/8A4E4sZxURPMIlc11fEu62MmTq+lV08w==
   dependencies:
     antd "^3.7.3"
     classnames "^2.2.6"

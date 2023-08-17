@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import Formatic, { Overrides, Data, Events } from "@transformd-ltd/sdk";
 import ElectronicVerification from "@transformd-ltd/electronic-verification";
+import UserLookupComponent from "@transformd-ltd/user-lookup";
 import AbnLookupComponent from "@transformd-ltd/abn-lookup";
 import ProfileLookupComponent from "@transformd-ltd/profile-lookup";
 import get from "lodash/get";
@@ -57,7 +58,7 @@ function FullscreenForm(props) {
       }
       downloadSection.append(sectionHeader);
 
-      const arrUploadId = env.UPLOAD_SECTION_FIELD_IDS.split(",").map(function (
+      const arrUploadId = env.UPLOAD_SECTION_FIELD_IDS.split(",").map(function(
         fieldId
       ) {
         return fieldId.trim();
@@ -147,8 +148,9 @@ function FullscreenForm(props) {
                               .values[fieldName].value.length;
                             fileCounter++
                           ) {
-                            var downloadButton =
-                              document.createElement("button");
+                            var downloadButton = document.createElement(
+                              "button"
+                            );
                             downloadButton.className = "download-buttons";
                             var buttonLabel = document.createTextNode(
                               fileCounter > 0
@@ -312,6 +314,10 @@ function FullscreenForm(props) {
         <Overrides.OverrideFieldContainer
           type="profileLookup"
           component={ProfileLookupComponent}
+        />
+        <Overrides.OverrideFieldContainer
+          type="userLookup"
+          component={UserLookupComponent}
         />
       </Formatic>
 

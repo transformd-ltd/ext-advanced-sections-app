@@ -1774,7 +1774,7 @@
 .action-button_submit .formatic-button,
 .formatic-button.formatic-action-bar-root__back {
   background-color: #352bc7 !important;
-  color: #F5F5F5 !important;
+  color: #f5f5f5 !important;
 }
 
 .formatic-button.formatic-action-bar-root__next:hover,
@@ -1787,6 +1787,60 @@
 
 .action-button_submit .formatic-button:hover {
   border: 2px solid #e2e4e5 !important;
+}
+
+.formatic .formatic-user-lookup__container .formatic-search-input {
+  display: flex;
+}
+.formatic .formatic-user-lookup__container .formatic-search-input .formatic-text__input-container {
+  flex-grow: 1;
+}
+.formatic .formatic-user-lookup__container .formatic-search-input .formatic-search__button {
+  margin-left: 8px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 42px;
+  height: auto;
+  color: #4f4f4f;
+  border: 2px solid #e2e4e5;
+  background-color: transparent;
+  border-radius: 100px;
+  box-shadow: none;
+  padding: 2px 10px;
+  justify-content: center;
+}
+.formatic .formatic-user-lookup__container .formatic-search-input .formatic-search__button:hover {
+  box-shadow: none;
+  background-color: transparent;
+  color: #352bc7;
+  border: 2px solid #352bc7;
+  border-radius: 100px;
+  text-decoration: none;
+}
+.formatic .formatic-user-lookup__container .formatic-search-input .formatic-error-message {
+  margin-top: 52px !important;
+}
+.formatic .formatic-user-lookup__container .formatic-search-result {
+  margin-top: 20px;
+}
+.formatic .formatic-user-lookup__container .formatic-search-result-item {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+}
+.formatic .formatic-user-lookup__container .formatic-search-result-item .formatic-search-result-item-detail {
+  margin-left: 8px;
+}
+.formatic .formatic-user-lookup__container .formatic-search-result-item .formatic-search-result-item-detail .formatic-user-lookup-detail-content {
+  display: flex;
+}
+.formatic .formatic-user-lookup__container .formatic-search-result-item .formatic-search-result-item-detail .formatic-user-lookup-detail-content h4 {
+  font-size: 15px;
+  line-height: 16px;
+}
+.formatic .formatic-user-lookup__container .formatic-search-result-item .formatic-search-result-item-detail .formatic-user-lookup-item-block {
+  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */

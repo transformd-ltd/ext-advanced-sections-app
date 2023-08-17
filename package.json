@@ -23,7 +23,7 @@
     "@transformd-ltd/sdk": "1.6.1",
     "@transformd-ltd/theme-fermi": "^1.0.69",
     "@transformd-ltd/theme-transformd": "^0.1.16",
-    "@transformd-ltd/user-lookup": "^0.1.3",
+    "@transformd-ltd/user-lookup": "^1.0.2",
     "axios": "^0.27.2",
     "get": "^1.4.0",
     "lodash": "^4.17.21",
