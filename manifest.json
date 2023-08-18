@@ -1,7 +1,7 @@
 {
 	"id": "com.transformd.ext-approval-example",
 	"manifest_version": 1,
-	"version": "0.9.30",
+	"version": "0.9.31",
 	"name": "Example Hosted App",
 	"icon": "icon.svg",
 	"environment": [
@@ -17,6 +17,13 @@
 			"key": "API_KEY",
 			"label": "API Key",
 			"description": "API Key for this application",
+			"type": "string",
+			"is_required": true
+		},
+		{
+			"key": "BRANCH",
+			"label": "Branch",
+			"description": "Form Branch",
 			"type": "string",
 			"is_required": true
 		},
