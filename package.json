@@ -20,7 +20,7 @@
     "@transformd-ltd/electronic-verification": "^0.1.5",
     "@transformd-ltd/profile-lookup": "^0.1.13",
     "@transformd-ltd/sandbox-bridge": "^0.0.2",
-    "@transformd-ltd/sdk": "1.6.1",
+    "@transformd-ltd/sdk": "1.8.2",
     "@transformd-ltd/theme-fermi": "^1.0.69",
     "@transformd-ltd/theme-transformd": "^0.1.16",
     "@transformd-ltd/user-lookup": "^0.1.3",
