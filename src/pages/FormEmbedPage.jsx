@@ -80,6 +80,7 @@ function FullscreenForm(props) {
                     ) {
                       var downloadButton = document.createElement("button");
                       downloadButton.className = "download-buttons";
+                      downloadButton.type = "button";
                       var buttonLabel = document.createTextNode(
                         fileCounter > 0
                           ? `${field}_(${fileCounter}).${res.data.values[
